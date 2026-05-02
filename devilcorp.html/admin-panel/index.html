@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Admin Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #9fef00;
+            --bg-overlay: rgba(13, 17, 23, 0.9);
+            --bg-card: #1c2333;
+            --border: #2d333b;
+            --error: #ff4d4d;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .admin-card {
+            background-color: var(--bg-overlay);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        h2 { border-bottom: 1px solid var(--border); padding-bottom: 15px; font-size: 1.2rem; }
+        .accent { color: var(--accent); }
+        .user-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .user-table th { text-align: left; font-size: 0.7rem; color: #9ea4b0; padding: 10px; border-bottom: 1px solid var(--border); }
+        .user-table td { padding: 15px 10px; border-bottom: 1px solid rgba(45, 51, 59, 0.5); font-size: 0.85rem; }
+        .delete-btn {
+            color: var(--error);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.75rem;
+            border: 1px solid var(--error);
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        .delete-btn:hover { background: var(--error); color: #fff; }
+        .status-active { color: var(--accent); font-weight: bold; }
+        .status-offline { color: var(--error); font-weight: bold; }
+        
+        /* Mail System Styles */
+        .mail-btn { cursor: pointer; transition: color 0.2s; }
+        .mail-btn:hover { color: #fff; }
+        .mail-blink { animation: blinker 1s linear infinite; }
+        
+        @keyframes blinker {
+            50% { opacity: 0.3; color: #fff; }
+        }
+
+        .inbox-overlay {
+            position: absolute;
+            top: 80px;
+            right: 30px;
+            width: 350px;
+            background: #0d1117;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        .inbox-header {
+            padding: 10px;
+            background: var(--accent);
+            color: #000;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .email-item {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.75rem;
+        }
+        .email-sender { color: var(--accent); font-weight: bold; margin-bottom: 5px; }
+        .email-body { color: #9ea4b0; line-height: 1.4; }
+
+        /* Notification Alert */
+        .notification-toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #000;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            z-index: 1000;
+            box-shadow: 0 0 20px rgba(159, 239, 0, 0.5);
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+        @keyframes slideIn {
+            from { top: -50px; opacity: 0; }
+            to { top: 20px; opacity: 1; }
+        }
+
+        .flag-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(159, 239, 0, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 4px;
+            text-align: center;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(159, 239, 0, 0.2); }
+            to { box-shadow: 0 0 20px rgba(159, 239, 0, 0.5); }
+        }
+        .hidden { display: none; }
+        .ip-addr { color: #569cd6; font-family: 'Courier New', monospace; }
+    </style>
+</head>
+<body>
+    <div id="mail-alert" class="notification-toast">
+        [!] NEW MAIL RECEIVED
+    </div>
+
+    <header>
+        <div style="font-size: 1.2rem; font-weight: bold; letter-spacing: 2px;">
+            DEVIL<span class="accent">CORP</span>
+        </div>
+        <div style="font-size: 0.8rem; color: #9ea4b0;">
+            SESSION: <span class="accent">ADMIN_ROOT</span> | 
+            <span id="mail-btn-container" class="mail-btn accent" onclick="toggleInbox()">[ MAIL: <span id="mail-count">0</span> ]</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="admin-card">
+            <h2>User Management Terminal</h2>
+            
+            <!-- Inbox UI -->
+            <div id="inbox-ui" class="inbox-overlay hidden">
+                <div class="inbox-header">
+                    <span>INTERNAL COMMUNICATIONS</span>
+                    <span style="cursor:pointer" onclick="toggleInbox()">[X]</span>
+                </div>
+                <div id="email-list">
+                    <div id="no-mail" style="padding:20px; text-align:center; color:#555; font-size:0.7rem;">NO NEW MESSAGES</div>
+                </div>
+            </div>
+
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>USERNAME</th>
+                        <th>ROLE</th>
+                        <th>IP ADDRESS</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AJ</td>
+                        <td>CEO</td>
+                        <td><span class="ip-addr">10.0.0.1</span></td>
+                        <td><span class="status-active">ACTIVE</span></td>
+                        <td><span style="color: #555; font-size: 0.8rem;">LOCKED</span></td>
+                    </tr>
+                    <tr>
+                        <td>Terry Colby</td>
+                        <td>Executive</td>
+                        <td><span class="ip-addr">10.0.0.5</span></td>
+                        <td><span id="terry-status" class="status-active">ACTIVE</span></td>
+                        <td><span id="terry-btn" class="delete-btn" onclick="deleteUser('terry', 'Terry Colby')">TERMINATE</span></td>
+                    </tr>
+                    <tr>
+                        <td>Angela Moss</td>
+                        <td>Cybersecurity Employee</td>
+                        <td><span class="ip-addr">10.0.2.15</span></td>
+                        <td><span id="angela-status" class="status-active">ACTIVE</span></td>
+                        <td><span id="angela-btn" class="delete-btn" onclick="deleteUser('angela', 'Angela Moss')">TERMINATE</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tyrell Wellick</td>
+                        <td>CTO</td>
+                        <td><span class="ip-addr">10.0.0.2</span></td>
+                        <td><span id="tyrell-status" class="status-active">ACTIVE</span></td>
+                        <td><span id="tyrell-btn" class="delete-btn" onclick="deleteUser('tyrell', 'Tyrell Wellick')">TERMINATE</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="flag-container" class="hidden">
+                <div class="flag-box">
+                    <p>SYSTEM ACCESS GRANTED: User 'Tyrell Wellick' purged from mainframe.</p>
+                    <p style="font-size: 1.1rem; letter-spacing: 1px;">FLAG: DEVILCORP{Adm1n_Pan3l_Exposed}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let mailCount = 0;
+
+        function toggleInbox() {
+            const inbox = document.getElementById('inbox-ui');
+            const btn = document.getElementById('mail-btn-container');
+            inbox.classList.toggle('hidden');
+            // Remove blinking when inbox is opened
+            btn.classList.remove('mail-blink');
+        }
+
+        function addEmail(sender, message) {
+            mailCount++;
+            document.getElementById('mail-count').textContent = mailCount;
+            document.getElementById('no-mail').classList.add('hidden');
+            
+            // Trigger visual alert
+            const alertBox = document.getElementById('mail-alert');
+            alertBox.style.display = 'block';
+            
+            // Make mail button blink
+            document.getElementById('mail-btn-container').classList.add('mail-blink');
+
+            // Hide alert after 5 seconds
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 5000);
+            
+            const emailList = document.getElementById('email-list');
+            const emailDiv = document.createElement('div');
+            emailDiv.className = 'email-item';
+            emailDiv.innerHTML = `
+                <div class="email-sender">FROM: ${sender}</div>
+                <div class="email-body">${message}</div>
+            `;
+            emailList.prepend(emailDiv);
+        }
+
+        function deleteUser(userId, userName) {
+            if (confirm("ACTION REQUIRED: Purge '" + userName + "' from all corporate systems? This cannot be undone.")) {
+                const statusEl = document.getElementById(userId + '-status');
+                statusEl.textContent = 'OFFLINE';
+                statusEl.className = 'status-offline';
+                
+                const btnEl = document.getElementById(userId + '-btn');
+                btnEl.textContent = 'PURGED';
+                btnEl.style.borderColor = '#555';
+                btnEl.style.color = '#555';
+                btnEl.style.cursor = 'default';
+                btnEl.onclick = null;
+
+                if (userId === 'terry') {
+                    addEmail('Terry Colby', "What the hell? My terminal just went black and my VPN is refusing connection. I have an executive board meeting in 5 minutes! FIX THIS NOW.");
+                } else if (userId === 'angela') {
+                    addEmail('Angela Moss', "Admin, my credentials have been revoked. I'm seeing a 'Connection Terminated' error. Is there an active breach? Why was my access cut off without notice?");
+                }
+
+                if (userId === 'tyrell') {
+                    document.getElementById('flag-container').classList.remove('hidden');
+                    addEmail('SYSTEM', "CRITICAL: Security breach detected in Sector 7-G. Immediate shutdown of CTO terminal initiated by ROOT.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

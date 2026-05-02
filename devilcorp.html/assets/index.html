@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index of /assets</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #9fef00;
+            --bg-overlay: rgba(13, 17, 23, 0.9);
+            --border: #2d333b;
+            --error: #ff4d4d;
+        }
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: url('/DEVILCROPBG.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background-color: var(--bg-overlay);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+        h1 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 15px; color: var(--accent); margin-top: 0; }
+        .forbidden-title { color: var(--error); border-color: var(--error); }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { text-align: left; font-size: 0.7rem; color: #9ea4b0; padding: 10px; border-bottom: 1px solid var(--border); }
+        td { padding: 12px 10px; border-bottom: 1px solid rgba(45, 51, 59, 0.3); font-size: 0.85rem; }
+        .icon { width: 30px; }
+        a { text-decoration: none; color: #fff; transition: color 0.2s; }
+        a:hover { color: var(--accent); text-decoration: underline; }
+        .denied-msg { text-align: center; padding: 40px 0; }
+        
+        /* Verbose Error Styles */
+        .verbose-error { background: #000; color: #ff9d00; padding: 20px; border-radius: 4px; border: 1px solid #444; font-size: 0.75rem; line-height: 1.4; overflow-x: auto; }
+        .error-header { background: #331100; color: #ff4400; padding: 5px 10px; margin-bottom: 10px; font-weight: bold; border-radius: 2px; }
+        .sys-info { color: #569cd6; }
+
+        footer { margin-top: 30px; border-top: 1px solid var(--border); padding-top: 15px; font-size: 0.7rem; color: #555; text-align: right; }
+        .hidden { display: none; }
+        .accent { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <!-- 403 Forbidden Screen -->
+    <div id="forbidden-screen" class="container">
+        <h1 class="forbidden-title">403 Forbidden</h1>
+        <div class="denied-msg">
+            <p style="color:#9ea4b0">Your session does not have the required permissions to browse this directory.</p>
+        </div>
+        <footer>DevilCorp Security Gateway v2.1</footer>
+    </div>
+
+    <!-- Bypassed Directory Screen -->
+    <div id="bypass-screen" class="container hidden">
+        <h1><span class="accent">Index of</span> /assets</h1>
+        <table>
+            <thead>
+                <tr><th class="icon"></th><th>NAME</th><th>LAST MODIFIED</th><th>SIZE</th></tr>
+            </thead>
+            <tbody>
+                <tr><td class="icon">📁</td><td><a href="../">Parent Directory</a></td><td>-</td><td>-</td></tr>
+                <tr><td class="icon">📄</td><td><a href="scripts.js">scripts.js</a></td><td>2025-05-01 10:20</td><td>12K</td></tr>
+                <tr><td class="icon">📄</td><td><a href="styles.css">styles.css</a></td><td>2025-05-01 10:22</td><td>8.4K</td></tr>
+                <tr><td class="icon">📄</td><td><a href="confidential_backup.txt">confidential_backup.txt</a></td><td>2025-05-02 09:15</td><td>1.2K</td></tr>
+                <tr><td class="icon">📄</td><td><a href="javascript:void(0)" onclick="showError()" style="color: #ff9d00;">sys_error.log</a></td><td>2025-05-02 11:30</td><td>45K</td></tr>
+            </tbody>
+        </table>
+        <footer>Apache/2.4.41 (Ubuntu) Server at internal.devilcorp.com Port 80</footer>
+    </div>
+
+    <!-- Verbose Error Screen -->
+    <div id="error-screen" class="container hidden">
+        <h1><span style="color:var(--error)">System Trace:</span> sys_error.log</h1>
+        <div class="verbose-error">
+            <div class="error-header">[FATAL EXCEPTION] Trace ID: 0xDEADBEEF7734</div>
+            <p>Uncaught Error: Call to undefined function authenticate_v2() in /var/www/internal/auth/handler.php:142</p>
+            <hr style="border-color: #222;">
+            <p class="sys-info">--- SYSTEM ARCHITECTURE LEAK ---</p>
+            <p>OS: Ubuntu 20.04.1 LTS (Focal Fossa)<br>
+            Kernel: Linux 5.4.0-74-generic x86_64<br>
+            Web Server: Apache/2.4.41 (Unix) mod_php/7.4.3<br>
+            Internal IP: 10.0.1.44<br>
+            Gateway Node: 10.0.1.1 (Cisco Firepower 2100)<br>
+            Database: PostgreSQL 12.6 (Internal Cluster #4)<br>
+            Load Balancer: HAProxy 2.0.13 (Sticky Sessions Enabled)</p>
+            
+            <p class="sys-info">--- ENVIRONMENT VARIABLES ---</p>
+            <p>DB_NAME: devilcorp_prod_db<br>
+            AWS_REGION: us-east-1<br>
+            DEBUG_MODE: ON<br>
+            AUTH_SERVICE_URL: http://10.0.1.50:8081/v1/auth</p>
+            
+            <p style="color: #666;">Stack Trace:<br>
+            #0 /var/www/internal/index.php(12): require_once('/var/www/intern...')<br>
+            #1 {main}</p>
+        </div>
+        <div style="margin-top:20px;">
+            <button onclick="hideError()" style="background:transparent; border:1px solid #444; color:#888; padding:8px 15px; cursor:pointer; border-radius:4px;">[ CLOSE LOG ]</button>
+        </div>
+        <footer>Node: DC-MGMT-SERVER-01</footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.location.href.includes('///assets///')) {
+                document.getElementById('forbidden-screen').classList.add('hidden');
+                document.getElementById('bypass-screen').classList.remove('hidden');
+            }
+        });
+
+        function showError() {
+            document.getElementById('bypass-screen').classList.add('hidden');
+            document.getElementById('error-screen').classList.remove('hidden');
+        }
+
+        function hideError() {
+            document.getElementById('error-screen').classList.add('hidden');
+            document.getElementById('bypass-screen').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

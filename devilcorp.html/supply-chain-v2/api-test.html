@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Burp Suite Interceptor</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --border: #2d333b; --burp-bg: #eeeeee; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 10px 40px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 20px; }
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        
+        .burp-window { background: var(--burp-bg); border-radius: 4px; border: 1px solid #999; color: #000; overflow: hidden; }
+        .burp-tabs { background: #d6d6d6; display: flex; border-bottom: 1px solid #999; }
+        .burp-tab { padding: 8px 20px; font-size: 0.75rem; border-right: 1px solid #999; background: #e1e1e1; cursor: pointer; }
+        .burp-tab.active { background: var(--burp-bg); font-weight: bold; border-bottom: 2px solid #ff6600; }
+        
+        .burp-controls { padding: 10px; background: #f0f0f0; border-bottom: 1px solid #ccc; display: flex; gap: 10px; }
+        .burp-btn { padding: 4px 15px; font-size: 0.75rem; border: 1px solid #888; background: #e1e1e1; cursor: pointer; box-shadow: 1px 1px 0 #fff inset; }
+        .burp-btn.forward { background: #ffcc99; border-color: #ff6600; font-weight: bold; }
+        
+        .raw-editor { width: 100%; height: 400px; background: #fff; border: none; padding: 15px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #000; outline: none; resize: none; }
+        
+        .response-area { background: #000; color: var(--accent); padding: 20px; border-top: 2px solid #ff6600; font-size: 0.8rem; min-height: 150px; white-space: pre-wrap; }
+        .status-msg { background: #333; color: #fff; padding: 5px 15px; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; color: #ff6600;">BURP SUITE PROFESSIONAL</div>
+        <div style="font-size: 0.7rem; color: #888;">Proxy Interceptor: localhost:8080</div>
+    </header>
+
+    <div class="container">
+        <p style="font-size: 0.8rem; color: #888; margin-bottom: 15px;">Capture point reached. Manually modify the request to POST /api/secure-vault with the backdoor header.</p>
+        
+        <div class="burp-window">
+            <div class="burp-tabs">
+                <div class="burp-tab active">Intercept</div>
+                <div class="burp-tab">HTTP history</div>
+                <div class="burp-tab">WebSockets history</div>
+                <div class="burp-tab">Options</div>
+            </div>
+            <div class="burp-controls">
+                <button class="burp-btn forward" onclick="sendRequest()">Forward</button>
+                <button class="burp-btn" onclick="location.reload()">Drop</button>
+                <button class="burp-btn">Action</button>
+            </div>
+            <textarea id="raw-http" class="raw-editor">GET /devilcorp.html/supply-chain-v2/ HTTP/1.1
+Host: localhost:8080
+Cache-Control: max-age=0
+sec-ch-ua: "Not-A.Brand";v="24", "Chromium";v="146"
+User-Agent: Mozilla/5.0 (X11; Linux x86_64)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive</textarea>
+            <div class="status-msg" id="status">INTERCEPT IS ON - Captured GET Request</div>
+            <div class="response-area" id="response-body">
+// Server response will be captured here after you modify and forward the request...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendRequest() {
+            const raw = document.getElementById('raw-http').value;
+            const resp = document.getElementById('response-body');
+            const status = document.getElementById('status');
+            
+            resp.innerHTML = "// Transmitting modified packet to server...";
+
+            setTimeout(() => {
+                const hasPost = raw.startsWith('POST /api/secure-vault');
+                const hasHeader = raw.includes('X-Vault-Token: MASTER_DEBUG_BYPASS_2025');
+                const hasJson = raw.includes('Content-Type: application/json');
+
+                if (hasPost && hasHeader) {
+                    resp.innerHTML = `HTTP/1.1 200 OK\nServer: DevilStack-v4\nContent-Type: application/json\n\n{\n  "status": "authenticated",\n  "data": {\n    "debug": true,\n    "vault_root_key": "DEVILCORP{Supply_Chain_Token_Leak}",\n    "notice": "Internal test mode active"\n  }\n}`;
+                    status.textContent = "200 OK - DATA EXFILTRATED";
+                } else if (hasPost && !hasHeader) {
+                    resp.innerHTML = `HTTP/1.1 401 Unauthorized\n\n{\n  "error": "Standard POST request received. Missing backdoor authentication header."\n}`;
+                    status.textContent = "401 UNAUTHORIZED";
+                } else if (raw.startsWith('GET')) {
+                    resp.innerHTML = `HTTP/1.1 200 OK\n\n// Standard page served. No vulnerability triggered.\n// Hint: You must change the request to a POST to the /api/secure-vault endpoint.`;
+                    status.textContent = "200 OK - STANDARD RESPONSE";
+                } else {
+                    resp.innerHTML = `HTTP/1.1 400 Bad Request\n\n{\n  "error": "Malformed or invalid request structure."\n}`;
+                    status.textContent = "400 BAD REQUEST";
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

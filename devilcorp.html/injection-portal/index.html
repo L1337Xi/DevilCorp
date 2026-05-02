@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Executive Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed; background-size: cover; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .search-card { background: rgba(13, 17, 23, 0.9); border: 1px solid var(--border); border-radius: 8px; padding: 40px; width: 100%; max-width: 800px; backdrop-filter: blur(10px); }
+        h1 { color: var(--accent); font-size: 1.2rem; letter-spacing: 3px; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 30px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 30px; }
+        input { flex: 1; background: #000; border: 1px solid var(--border); padding: 12px; color: var(--accent); border-radius: 4px; outline: none; font-family: inherit; }
+        input:focus { border-color: var(--accent); }
+        .btn-search { background: var(--accent); color: #000; border: none; padding: 12px 25px; cursor: pointer; border-radius: 4px; font-weight: bold; text-transform: uppercase; }
+        
+        .results-area { background: #000; border: 1px solid var(--border); border-radius: 4px; min-height: 200px; padding: 20px; font-size: 0.85rem; color: #888; overflow-y: auto; max-height: 300px; }
+        .result-item { border-bottom: 1px solid #111; padding: 10px 0; display: flex; justify-content: space-between; }
+        .result-name { color: #fff; font-weight: bold; }
+        .error-msg { color: var(--error); font-family: monospace; font-size: 0.75rem; background: rgba(255, 77, 77, 0.1); padding: 10px; border-radius: 4px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="search-card">
+        <h1>EXECUTIVE_DATABASE_SEARCH</h1>
+        <p style="font-size: 0.8rem; color: #9ea4b0; margin-bottom: 20px;">Search for internal projects or employee records by name.</p>
+        
+        <div class="input-group">
+            <input type="text" id="search-input" placeholder="Enter keyword (e.g. project, user)...">
+            <button class="btn-search" onclick="performSearch()">QUERY DB</button>
+        </div>
+
+        <div class="results-area" id="results">
+            <div style="text-align: center; margin-top: 70px;">[ NO DATA RETRIEVED - STANDBY ]</div>
+        </div>
+    </div>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('search-input').value.trim();
+            const results = document.getElementById('results');
+            
+            results.innerHTML = '[INFO] Executing SQL Query: SELECT id, name, category FROM records WHERE name LIKE \'%' + query + '%\'...';
+
+            setTimeout(() => {
+                const qLower = query.toLowerCase();
+                
+                if (query === "'") {
+                    results.innerHTML = `
+                        <div class="error-msg">
+                            [SQL_ERROR] Unclosed quotation mark after the character string '%'%'.<br>
+                            Internal Exception: System.Data.SqlClient.SqlException at DevilStack.Internal.QueryExec(String sql)
+                        </div>
+                    `;
+                } else if (qLower.includes('union') && qLower.includes('select')) {
+                    if (qLower.includes('information_schema.columns') && qLower.includes('system_secrets')) {
+                        results.innerHTML = `
+                            <div class="result-item"><span>ID: 1</span><span class="result-name">id</span><span>COLUMN</span></div>
+                            <div class="result-item"><span>ID: 2</span><span class="result-name">flag_content</span><span>COLUMN</span></div>
+                            <div class="result-item"><span>ID: 3</span><span class="result-name">description</span><span>COLUMN</span></div>
+                        `;
+                    } else if (qLower.includes('information_schema.tables')) {
+                        results.innerHTML = `
+                            <div class="result-item"><span>ID: 1</span><span class="result-name">users</span><span>TABLE</span></div>
+                            <div class="result-item"><span>ID: 2</span><span class="result-name">records</span><span>TABLE</span></div>
+                            <div class="result-item"><span>ID: 3</span><span class="result-name">system_secrets</span><span>TABLE</span></div>
+                        `;
+                    } else if (qLower.includes('system_secrets')) {
+                        results.innerHTML = `
+                            <div class="result-item">
+                                <span>ID: 1</span>
+                                <span class="result-name">DEVILCORP{SQL_Inj3ct1on_Master_Explo1t}</span>
+                                <span style="color:var(--accent)">[SYSTEM_SECRET]</span>
+                            </div>
+                        `;
+                    } else {
+                        // Generic UNION response
+                        results.innerHTML = `
+                            <div class="result-item">
+                                <span>ID: 1</span>
+                                <span class="result-name">Project_Ares</span>
+                                <span>R&D</span>
+                            </div>
+                        `;
+                    }
+                } else if (query === '') {
+                    results.innerHTML = '<div style="text-align: center; margin-top: 70px;">[ ENTER QUERY PARAMETER ]</div>';
+                } else {
+                    results.innerHTML = `
+                        <div class="result-item">
+                            <span>ID: 442</span>
+                            <span class="result-name">Search: ${query}</span>
+                            <span>NO_RESULTS</span>
+                        </div>
+                    `;
+                }
+            }, 600);
+        }
+
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+    </script>
+</body>
+</html>

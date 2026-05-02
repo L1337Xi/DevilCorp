@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Technical Support Command</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --warn: #ffcc00; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; min-height: 100vh; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+        
+        .panel-card { background: rgba(13, 17, 23, 0.95); border: 1px solid var(--border); border-radius: 8px; padding: 25px; backdrop-filter: blur(10px); }
+        h2 { color: var(--accent); font-size: 1rem; letter-spacing: 2px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; }
+        
+        /* Ticket List */
+        .ticket-list { list-style: none; padding: 0; }
+        .ticket-item { padding: 15px; border: 1px solid #222; border-radius: 4px; margin-bottom: 15px; background: #080808; display: flex; justify-content: space-between; align-items: center; }
+        .ticket-id { color: var(--accent); font-weight: bold; font-size: 0.8rem; margin-right: 15px; }
+        .ticket-subject { font-size: 0.9rem; flex: 1; }
+        .status-tag { font-size: 0.7rem; padding: 3px 8px; border-radius: 3px; font-weight: bold; }
+        .status-open { background: rgba(159, 239, 0, 0.1); color: var(--accent); border: 1px solid var(--accent); }
+        .status-pending { background: rgba(255, 204, 0, 0.1); color: var(--warn); border: 1px solid var(--warn); }
+        
+        /* System Monitors */
+        .monitor-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.8rem; color: #888; }
+        .monitor-bar { height: 6px; background: #111; border-radius: 3px; overflow: hidden; margin-top: 5px; }
+        .bar-fill { height: 100%; background: var(--accent); width: 0%; transition: width 2s ease-out; }
+        
+        .sidebar-item { margin-bottom: 30px; }
+        .accent { color: var(--accent); }
+        .user-tag { background: #000; padding: 5px 15px; border-radius: 4px; border: 1px solid var(--border); font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span class="accent">CORP</span> SUPPORT_COMMAND</div>
+        <div class="user-tag">SESSION: <span class="accent">it_support_node_7734</span></div>
+    </header>
+
+    <div class="container">
+        <!-- Main Panel: Active Tickets -->
+        <div class="panel-card">
+            <h2>ACTIVE_TICKETS_QUEUE</h2>
+            <div class="ticket-list">
+                <div class="ticket-item">
+                    <span class="ticket-id">#DC-1092</span>
+                    <span class="ticket-subject">VPN connection dropping for Executive node</span>
+                    <span class="status-tag status-pending">PENDING</span>
+                </div>
+                <div class="ticket-item">
+                    <span class="ticket-id">#DC-1094</span>
+                    <span class="ticket-subject">New laptop setup for Sector 7-G</span>
+                    <span class="status-tag status-open">OPEN</span>
+                </div>
+                <div class="ticket-item" style="border-color: #444; opacity: 0.5;">
+                    <span class="ticket-id">#DC-1088</span>
+                    <span class="ticket-subject">Internal Mail Server Migration</span>
+                    <span class="status-tag" style="background:#222; color:#555;">CLOSED</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 15px; background: rgba(255, 77, 77, 0.05); border: 1px dashed #ff4d4d; color: #ff4d4d; font-size: 0.8rem;">
+                [ALERT] Access to global administrative commands is restricted. <br>
+                Please contact the <strong>Root Administrator</strong> for elevation requests.
+            </div>
+        </div>
+
+        <!-- Sidebar: System Health -->
+        <div class="panel-card">
+            <h2>SYSTEM_HEALTH</h2>
+            <div class="sidebar-item">
+                <div class="monitor-row">
+                    <span>CPU_LOAD</span>
+                    <span>42%</span>
+                </div>
+                <div class="monitor-bar"><div class="bar-fill" style="width: 42%;"></div></div>
+            </div>
+            <div class="sidebar-item">
+                <div class="monitor-row">
+                    <span>MEM_USAGE</span>
+                    <span>1.4 TB</span>
+                </div>
+                <div class="monitor-bar"><div class="bar-fill" style="width: 68%;"></div></div>
+            </div>
+            <div class="sidebar-item">
+                <div class="monitor-row">
+                    <span>NET_TRAFFIC</span>
+                    <span>STABLE</span>
+                </div>
+                <div class="monitor-bar"><div class="bar-fill" style="width: 15%;"></div></div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h2>INCIDENT_LOGS</h2>
+                <div style="font-size: 0.7rem; color: #444; line-height: 1.8;">
+                    [23:42:01] it_support logged in (192.168.1.7)<br>
+                    [23:40:12] Heartbeat check: OK<br>
+                    [23:35:44] DB cluster backup completed.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

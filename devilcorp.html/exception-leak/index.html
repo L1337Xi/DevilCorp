@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Inventory Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed; background-size: cover; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .app-card { background: rgba(13, 17, 23, 0.95); border: 1px solid var(--border); border-radius: 8px; padding: 40px; width: 100%; max-width: 600px; backdrop-filter: blur(10px); text-align: center; }
+        h1 { color: var(--accent); font-size: 1.1rem; letter-spacing: 3px; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 30px; }
+        .search-box { display: flex; gap: 10px; margin-bottom: 20px; }
+        input { flex: 1; background: #000; border: 1px solid var(--border); padding: 12px; color: var(--accent); border-radius: 4px; outline: none; font-family: inherit; }
+        .btn-query { background: var(--accent); color: #000; border: none; padding: 12px 25px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        
+        /* 500 Error Page Styles */
+        .error-page { background: #fff; color: #000; padding: 50px; text-align: left; font-family: sans-serif; display: none; width: 90%; max-width: 1000px; border-radius: 4px; box-shadow: 0 10px 50px rgba(0,0,0,0.8); }
+        .error-title { font-size: 2rem; color: #cc0000; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .stack-trace { background: #f8f8f8; border: 1px solid #ddd; padding: 20px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; overflow-x: auto; margin-top: 20px; color: #333; line-height: 1.5; }
+        .env-var { color: #0000aa; font-weight: bold; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div id="app-screen" class="app-card">
+        <h1>INFRASTRUCTURE_INVENTORY_v4</h1>
+        <p style="font-size: 0.8rem; color: #9ea4b0; margin-bottom: 25px;">Search organizational hardware assets by unique numeric ID.</p>
+        <div class="search-box">
+            <input type="text" id="id-input" placeholder="Enter Asset ID (e.g. 101, 102)...">
+            <button class="btn-query" onclick="searchAsset()">FETCH DATA</button>
+        </div>
+        <div id="output" style="font-size: 0.8rem; color: #555;">[READY] Waiting for query...</div>
+    </div>
+
+    <!-- Simulated Server-Side Error Page -->
+    <div id="error-screen" class="error-page">
+        <h1 class="error-title">Internal Server Error (500)</h1>
+        <p><strong>Exception:</strong> System.InvalidTypeException: Unable to cast object of type 'System.String' to type 'System.Int32'.</p>
+        <p>A fatal exception occurred during the processing of your request. See below for the full debug trace.</p>
+        
+        <div class="stack-trace">
+            [DEBUG_TRACE_START]<br>
+            #0 /var/www/internal/api/inventory.py(44): fetch_id(input_str='<span id="leaked-input"></span>')<br>
+            #1 /var/www/internal/main.py(12): process_request(data=req.query)<br>
+            <br>
+            --- SYSTEM CONTEXT DUMP ---<br>
+            USER: web-service-prod<br>
+            OS: Linux 5.15.0-generic-dc<br>
+            PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin<br>
+            <br>
+            <span class="env-var">--- LEAKED ENVIRONMENT VARIABLES ---</span><br>
+            DB_HOST: 10.0.4.122<br>
+            DB_PORT: 5432<br>
+            DEBUG_LVL: 3 (VERBOSE)<br>
+            <span style="background: yellow;">SYSTEM_ROOT_FLAG: DEVILCORP{Error_Bas3d_Leak_Found}</span><br>
+            AUTH_SECRET: 0x9921_DEAD_BEEF<br>
+            <br>
+            [DEBUG_TRACE_END]
+        </div>
+        <button onclick="location.reload()" style="margin-top:20px; padding: 10px 20px; cursor:pointer;">[ RETURN TO APP ]</button>
+    </div>
+
+    <script>
+        function searchAsset() {
+            const val = document.getElementById('id-input').value.trim();
+            const output = document.getElementById('output');
+            
+            if (val === '') return;
+
+            output.innerHTML = '<span style="color:var(--accent)">[INFO] Requesting asset data for ID: ' + val + '...</span>';
+
+            setTimeout(() => {
+                // If input is not a number, trigger the crash
+                if (isNaN(val)) {
+                    document.getElementById('app-screen').classList.add('hidden');
+                    document.getElementById('leaked-input').textContent = val;
+                    document.getElementById('error-screen').style.display = 'block';
+                    document.body.style.background = '#333'; // Change background to look like a standard error page
+                } else {
+                    output.innerHTML = `
+                        <div style="margin-top:20px; text-align:left; color:#fff; border:1px solid #222; padding:15px; border-radius:4px; background:#000;">
+                            [ID] ${val}<br>
+                            [NAME] Cisco-Catalyst-Node-${val}<br>
+                            [STATUS] Operational<br>
+                            [LOCATION] DC-US-EAST-Sector-G
+                        </div>
+                    `;
+                }
+            }, 800);
+        }
+
+        document.getElementById('id-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchAsset();
+        });
+    </script>
+</body>
+</html>

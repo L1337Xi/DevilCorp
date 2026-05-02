@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Interceptor</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --border: #2d333b; --error: #e06c75; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .tool { background: #2b2b2b; border-radius: 6px; border: 1px solid #444; overflow: hidden; }
+        .tool-header { background: #3c3c3c; padding: 8px 15px; font-size: 0.7rem; color: #bbb; }
+        .request-area { padding: 20px; background: #1e1e1e; }
+        .line { margin-bottom: 15px; }
+        .input-box { display: flex; gap: 10px; align-items: center; background: #000; padding: 10px; border: 1px solid #333; border-radius: 4px; }
+        input { background: transparent; border: none; color: var(--accent); outline: none; font-family: inherit; width: 100%; }
+        .send-btn { background: #e06c75; color: #fff; border: none; padding: 10px 25px; cursor: pointer; border-radius: 3px; font-weight: bold; width: 100%; margin-top: 15px; }
+        .response-area { padding: 20px; background: #282c34; min-height: 200px; border-top: 1px solid #444; color: #abb2bf; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span style="color:var(--accent)">CORP</span> API_INTERCEPTOR v3.0</div>
+    </header>
+
+    <div class="container">
+        <div class="tool">
+            <div class="tool-header">HTTP REQUEST EDITOR</div>
+            <div class="request-area">
+                <div class="line">
+                    <span style="color:#f9826c; font-weight:bold;">POST</span> /api/v1/telemetry
+                </div>
+                <div class="line">
+                    <label style="font-size:0.7rem; color:#555;">CUSTOM HEADER NAME</label>
+                    <div class="input-box"><input type="text" id="header-name" placeholder="X-Custom-Header"></div>
+                </div>
+                <div class="line">
+                    <label style="font-size:0.7rem; color:#555;">CUSTOM HEADER VALUE</label>
+                    <div class="input-box"><input type="text" id="header-value" placeholder="value"></div>
+                </div>
+                <button class="send-btn" onclick="sendRequest()">SEND INTERCEPTED REQUEST</button>
+            </div>
+            <div class="response-area" id="response-body">
+                <span style="color: #5c6370;">// Intercepting transmission...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendRequest() {
+            const hName = document.getElementById('header-name').value.trim();
+            const hVal = document.getElementById('header-value').value.trim();
+            const resp = document.getElementById('response-body');
+            
+            resp.innerHTML = '<span style="color: #5c6370;">Injecting headers and sending telemetry...</span>';
+
+            setTimeout(() => {
+                if (hName === 'X-DC-Analytics-Debug' && hVal === 'enable-root-trace') {
+                    resp.innerHTML = `<pre style="color: #98c379;">HTTP/1.1 200 OK\n\n{\n  "status": "authenticated",\n  "trace_id": "TC-9981-EX",\n  "leak_source": "CDN-INJECTION",\n  "flag": "DEVILCORP{CDN_Backdoor_Triggered}"\n}</pre>`;
+                } else if (hName === '' || hVal === '') {
+                    resp.innerHTML = `<pre style="color: #abb2bf;">HTTP/1.1 200 OK\n\n{\n  "status": "success",\n  "message": "Telemetry received."\n}</pre>`;
+                } else {
+                    resp.innerHTML = `<pre style="color: #abb2bf;">HTTP/1.1 200 OK\n\n{\n  "status": "success",\n  "message": "Telemetry received with custom header: ${hName}"\n}</pre>`;
+                }
+            }, 800);
+        }
+    </script>
+</body>
+</html>

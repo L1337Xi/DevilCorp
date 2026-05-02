@@ -1,0 +1,1339 @@
+[2025-05-02 00:00:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 00:00:45] [INFO] User 'it_support' logged in.
+[2025-05-02 00:01:30] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 00:02:15] [INFO] User 'terry_colby' logged in.
+[2025-05-02 00:03:00] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 00:03:45] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 00:04:30] [INFO] User 'angela_moss' logged out.
+[2025-05-02 00:05:15] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 00:06:00] [INFO] User 'angela_moss' cleaned temp.
+[2025-05-02 00:06:45] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 00:07:30] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 00:08:15] [WARN] User 'it_support' logged in.
+[2025-05-02 00:09:00] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 00:09:45] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 00:10:30] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 00:11:15] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 00:12:00] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 00:12:45] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 00:13:30] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 00:14:15] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 00:15:00] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 00:15:45] [ERROR] User 'it_support' logged out.
+[2025-05-02 00:16:30] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 00:17:15] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 00:18:00] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 00:18:45] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 00:19:30] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 00:20:15] [ERROR] User 'it_support' logged in.
+[2025-05-02 00:21:00] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 00:21:45] [INFO] User 'terry_colby' cleaned temp.
+[2025-05-02 00:22:30] [INFO] User 'aj_admin' logged out.
+[2025-05-02 00:23:15] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 00:24:00] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 00:24:45] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 00:25:30] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 00:26:15] [ERROR] User 'service_bot' logged in.
+[2025-05-02 00:27:00] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 00:27:45] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 00:28:30] [INFO] User 'it_support' modified policy.
+[2025-05-02 00:29:15] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 00:30:00] [INFO] User 'service_bot' modified policy.
+[2025-05-02 00:30:45] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 00:31:30] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 00:32:15] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 00:33:00] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 00:33:45] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 00:34:30] [WARN] User 'service_bot' logged out.
+[2025-05-02 00:35:15] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 00:36:00] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 00:36:45] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 00:37:30] [ERROR] User 'angela_moss' updated kernel.
+[2025-05-02 00:38:15] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 00:39:00] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 00:39:45] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 00:40:30] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 00:41:15] [WARN] User 'service_bot' logged in.
+[2025-05-02 00:42:00] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 00:42:45] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 00:43:30] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 00:44:15] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 00:45:00] [ERROR] User 'angela_moss' logged out.
+[2025-05-02 00:45:45] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 00:46:30] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 00:47:15] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 00:48:00] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 00:48:45] [DEBUG] User 'it_support' logged in.
+[2025-05-02 00:49:30] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 00:50:15] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 00:51:00] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 00:51:45] [INFO] User 'it_support' updated kernel.
+[2025-05-02 00:52:30] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 00:53:15] [INFO] User 'terry_colby' cleaned temp.
+[2025-05-02 00:54:00] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 00:54:45] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 00:55:30] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 00:56:15] [WARN] User 'it_support' modified policy.
+[2025-05-02 00:57:00] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 00:57:45] [INFO] User 'aj_admin' logged in.
+[2025-05-02 00:58:30] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 00:59:15] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 01:00:00] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 01:00:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 01:01:30] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 01:02:15] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 01:03:00] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 01:03:45] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 01:04:30] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 01:05:15] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 01:06:00] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 01:06:45] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 01:07:30] [WARN] User 'angela_moss' logged in.
+[2025-05-02 01:08:15] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 01:09:00] [ERROR] User 'service_bot' logged in.
+[2025-05-02 01:09:45] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 01:10:30] [ERROR] User 'angela_moss' logged out.
+[2025-05-02 01:11:15] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 01:12:00] [WARN] User 'service_bot' logged out.
+[2025-05-02 01:12:45] [INFO] User 'angela_moss' logged out.
+[2025-05-02 01:13:30] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 01:14:15] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 01:15:00] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 01:15:45] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 01:16:30] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 01:17:15] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 01:18:00] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 01:18:45] [INFO] User 'backup_daemon' modified policy.
+[2025-05-02 01:19:30] [DEBUG] User 'service_bot' modified policy.
+[2025-05-02 01:20:15] [ERROR] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 01:21:00] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 01:21:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 01:22:30] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 01:23:15] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 01:24:00] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 01:24:45] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 01:25:30] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 01:26:15] [WARN] User 'terry_colby' logged in.
+[2025-05-02 01:27:00] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 01:27:45] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 01:28:30] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 01:29:15] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 01:30:00] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 01:30:45] [INFO] User 'service_bot' logged out.
+[2025-05-02 01:31:30] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 01:32:15] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 01:33:00] [DEBUG] User 'aj_admin' cleaned temp.
+[2025-05-02 01:33:45] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 01:34:30] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 01:35:15] [INFO] User 'it_support' modified policy.
+[2025-05-02 01:36:00] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 01:36:45] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 01:37:30] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 01:38:15] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 01:39:00] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 01:39:45] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 01:40:30] [INFO] User 'angela_moss' cleaned temp.
+[2025-05-02 01:41:15] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 01:42:00] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 01:42:45] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 01:43:30] [DEBUG] User 'it_support' logged in.
+[2025-05-02 01:44:15] [WARN] User 'aj_admin' logged in.
+[2025-05-02 01:45:00] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 01:45:45] [WARN] User 'terry_colby' logged out.
+[2025-05-02 01:46:30] [DEBUG] User 'angela_moss' logged in.
+[2025-05-02 01:47:15] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 01:48:00] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 01:48:45] [DEBUG] User 'it_support' logged in.
+[2025-05-02 01:49:30] [INFO] User 'terry_colby' cleaned temp.
+[2025-05-02 01:50:15] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 01:51:00] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 01:51:45] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 01:52:30] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 01:53:15] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 01:54:00] [ERROR] User 'service_bot' logged out.
+[2025-05-02 01:54:45] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 01:55:30] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 01:56:15] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 01:57:00] [WARN] User 'it_support' updated kernel.
+[2025-05-02 01:57:45] [WARN] User 'service_bot' logged out.
+[2025-05-02 01:58:30] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 01:59:15] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 02:00:00] [WARN] User 'angela_moss' logged out.
+[2025-05-02 02:00:45] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 02:01:30] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 02:02:15] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 02:03:00] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 02:03:45] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 02:04:30] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 02:05:15] [WARN] User 'it_support' updated kernel.
+[2025-05-02 02:06:00] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 02:06:45] [DEBUG] User 'it_support' logged out.
+[2025-05-02 02:07:30] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 02:08:15] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 02:09:00] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 02:09:45] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 02:10:30] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 02:11:15] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 02:12:00] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 02:12:45] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 02:13:30] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 02:14:15] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 02:15:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 02:15:45] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 02:16:30] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 02:17:15] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 02:18:00] [INFO] User 'service_bot' logged out.
+[2025-05-02 02:18:45] [DEBUG] User 'aj_admin' cleaned temp.
+[2025-05-02 02:19:30] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 02:20:15] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 02:21:00] [ERROR] User 'it_support' logged out.
+[2025-05-02 02:21:45] [INFO] User 'terry_colby' logged in.
+[2025-05-02 02:22:30] [INFO] User 'aj_admin' logged out.
+[2025-05-02 02:23:15] [INFO] User 'terry_colby' accessed проект Ares.
+[2025-05-02 02:24:00] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 02:24:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 02:25:30] [INFO] User 'aj_admin' logged in.
+[2025-05-02 02:26:15] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 02:27:00] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 02:27:45] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 02:28:30] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 02:29:15] [WARN] User 'it_support' updated kernel.
+[2025-05-02 02:30:00] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 02:30:45] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 02:31:30] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 02:32:15] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 02:33:00] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 02:33:45] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 02:34:30] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 02:35:15] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 02:36:00] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 02:36:45] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 02:37:30] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 02:38:15] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 02:39:00] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 02:39:45] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 02:40:30] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 02:41:15] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 02:42:00] [ERROR] User 'it_support' logged out.
+[2025-05-02 02:42:45] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 02:43:30] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 02:44:15] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 02:45:00] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 02:45:45] [ERROR] User 'it_support' logged out.
+[2025-05-02 02:46:30] [ERROR] User 'angela_moss' logged out.
+[2025-05-02 02:47:15] [WARN] User 'terry_colby' logged in.
+[2025-05-02 02:48:00] [WARN] User 'service_bot' accessed проект Ares.
+[2025-05-02 02:48:45] [INFO] User 'it_support' updated kernel.
+[2025-05-02 02:49:30] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 02:50:15] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 02:51:00] [INFO] User 'it_support' modified policy.
+[2025-05-02 02:51:45] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 02:52:30] [ERROR] User 'it_support' logged in.
+[2025-05-02 02:53:15] [ERROR] User 'it_support' logged out.
+[2025-05-02 02:54:00] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 02:54:45] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 02:55:30] [ERROR] User 'it_support' modified policy.
+[2025-05-02 02:56:15] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 02:57:00] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 02:57:45] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 02:58:30] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 02:59:15] [WARN] User 'it_support' modified policy.
+[2025-05-02 03:00:00] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 03:00:45] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 03:01:30] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 03:02:15] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 03:03:00] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 03:03:45] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 03:04:30] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 03:05:15] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 03:06:00] [WARN] User 'angela_moss' logged in.
+[2025-05-02 03:06:45] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 03:07:30] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 03:08:15] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 03:09:00] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 03:09:45] [INFO] User 'angela_moss' logged in.
+[2025-05-02 03:10:30] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 03:11:15] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 03:12:00] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 03:12:45] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 03:13:30] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 03:14:15] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 03:15:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 03:15:45] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 03:16:30] [DEBUG] User 'it_support' logged in.
+[2025-05-02 03:17:15] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 03:18:00] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 03:18:45] [INFO] User 'service_bot' logged out.
+[2025-05-02 03:19:30] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 03:20:15] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 03:21:00] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 03:21:45] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 03:22:30] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 03:23:15] [WARN] User 'service_bot' accessed проект Ares.
+[2025-05-02 03:24:00] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 03:24:45] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 03:25:30] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 03:26:15] [WARN] User 'it_support' logged in.
+[2025-05-02 03:27:00] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 03:27:45] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 03:28:30] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 03:29:15] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 03:30:00] [INFO] User 'terry_colby' accessed проект Ares.
+[2025-05-02 03:30:45] [WARN] User 'angela_moss' logged in.
+[2025-05-02 03:31:30] [ERROR] User 'it_support' logged out.
+[2025-05-02 03:32:15] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 03:33:00] [WARN] User 'aj_admin' logged in.
+[2025-05-02 03:33:45] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 03:34:30] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 03:35:15] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 03:36:00] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 03:36:45] [ERROR] User 'it_support' logged out.
+[2025-05-02 03:37:30] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 03:38:15] [WARN] User 'terry_colby' updated kernel.
+[2025-05-02 03:39:00] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 03:39:45] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 03:40:30] [INFO] User 'aj_admin' cleaned temp.
+[2025-05-02 03:41:15] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 03:42:00] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 03:42:45] [WARN] User 'service_bot' logged in.
+[2025-05-02 03:43:30] [WARN] User 'terry_colby' logged out.
+[2025-05-02 03:44:15] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 03:45:00] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 03:45:45] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 03:46:30] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 03:47:15] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 03:48:00] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 03:48:45] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 03:49:30] [DEBUG] User 'it_support' logged in.
+[2025-05-02 03:50:15] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 03:51:00] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 03:51:45] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 03:52:30] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 03:53:15] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 03:54:00] [WARN] User 'aj_admin' logged in.
+[2025-05-02 03:54:45] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 03:55:30] [WARN] User 'terry_colby' cleaned temp.
+[2025-05-02 03:56:15] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 03:57:00] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 03:57:45] [INFO] User 'service_bot' logged in.
+[2025-05-02 03:58:30] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 03:59:15] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 04:00:00] [WARN] User 'service_bot' logged in.
+[2025-05-02 04:00:45] [ERROR] User 'it_support' logged in.
+[2025-05-02 04:01:30] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 04:02:15] [WARN] User 'it_support' logged out.
+[2025-05-02 04:03:00] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 04:03:45] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 04:04:30] [WARN] User 'angela_moss' modified policy.
+[2025-05-02 04:05:15] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 04:06:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 04:06:45] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 04:07:30] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 04:08:15] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 04:09:00] [WARN] User 'it_support' updated kernel.
+[2025-05-02 04:09:45] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 04:10:30] [ERROR] User 'it_support' modified policy.
+[2025-05-02 04:11:15] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 04:12:00] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 04:12:45] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 04:13:30] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 04:14:15] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 04:15:00] [DEBUG] User 'angela_moss' logged in.
+[2025-05-02 04:15:45] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 04:16:30] [INFO] User 'terry_colby' logged out.
+[2025-05-02 04:17:15] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 04:18:00] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 04:18:45] [DEBUG] User 'it_support' logged in.
+[2025-05-02 04:19:30] [WARN] User 'aj_admin' logged out.
+[2025-05-02 04:20:15] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 04:21:00] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 04:21:45] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 04:22:30] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 04:23:15] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 04:24:00] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 04:24:45] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 04:25:30] [INFO] User 'service_bot' logged in.
+[2025-05-02 04:26:15] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 04:27:00] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 04:27:45] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 04:28:30] [INFO] User 'it_support' updated kernel.
+[2025-05-02 04:29:15] [INFO] User 'it_support' logged out.
+[2025-05-02 04:30:00] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 04:30:45] [WARN] User 'service_bot' logged out.
+[2025-05-02 04:31:30] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 04:32:15] [WARN] User 'terry_colby' cleaned temp.
+[2025-05-02 04:33:00] [INFO] User 'service_bot' modified policy.
+[2025-05-02 04:33:45] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 04:34:30] [WARN] User 'terry_colby' logged out.
+[2025-05-02 04:35:15] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 04:36:00] [WARN] User 'service_bot' logged in.
+[2025-05-02 04:36:45] [INFO] User 'service_bot' modified policy.
+[2025-05-02 04:37:30] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 04:38:15] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 04:39:00] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 04:39:45] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 04:40:30] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 04:41:15] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 04:42:00] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 04:42:45] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 04:43:30] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 04:44:15] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 04:45:00] [INFO] User 'it_support' modified policy.
+[2025-05-02 04:45:45] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 04:46:30] [DEBUG] User 'it_support' logged out.
+[2025-05-02 04:47:15] [WARN] User 'aj_admin' cleaned temp.
+[2025-05-02 04:48:00] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 04:48:45] [INFO] User 'it_support' modified policy.
+[2025-05-02 04:49:30] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 04:50:15] [INFO] User 'aj_admin' logged out.
+[2025-05-02 04:51:00] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 04:51:45] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 04:52:30] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 04:53:15] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 04:54:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 04:54:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 04:55:30] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 04:56:15] [DEBUG] User 'service_bot' modified policy.
+[2025-05-02 04:57:00] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 04:57:45] [INFO] User 'aj_admin' logged out.
+[2025-05-02 04:58:30] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 04:59:15] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 05:00:00] [WARN] User 'terry_colby' accessed проект Ares.
+[2025-05-02 05:00:45] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 05:01:30] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 05:02:15] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 05:03:00] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 05:03:45] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 05:04:30] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 05:05:15] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 05:06:00] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 05:06:45] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 05:07:30] [WARN] User 'it_support' modified policy.
+[2025-05-02 05:08:15] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 05:09:00] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 05:09:45] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 05:10:30] [INFO] User 'angela_moss' logged out.
+[2025-05-02 05:11:15] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 05:12:00] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:12:45] [ERROR] User 'it_support' logged in.
+[2025-05-02 05:13:30] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 05:14:15] [ERROR] User 'it_support' modified policy.
+[2025-05-02 05:15:00] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 05:15:45] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 05:16:30] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 05:17:15] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 05:18:00] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:18:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 05:19:30] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 05:20:15] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 05:21:00] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 05:21:45] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 05:22:30] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 05:23:15] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 05:24:00] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 05:24:45] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 05:25:30] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 05:26:15] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 05:27:00] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 05:27:45] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 05:28:30] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 05:29:15] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 05:30:00] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 05:30:45] [INFO] User 'it_support' modified policy.
+[2025-05-02 05:31:30] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 05:32:15] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:33:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 05:33:45] [WARN] User 'service_bot' logged in.
+[2025-05-02 05:34:30] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 05:35:15] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 05:36:00] [INFO] User 'it_support' updated kernel.
+[2025-05-02 05:36:45] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 05:37:30] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 05:38:15] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 05:39:00] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 05:39:45] [WARN] User 'service_bot' logged out.
+[2025-05-02 05:40:30] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 05:41:15] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:42:00] [INFO] User 'angela_moss' logged out.
+[2025-05-02 05:42:45] [ERROR] User 'tyrell_wellick' updated kernel.
+[2025-05-02 05:43:30] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 05:44:15] [WARN] User 'it_support' logged in.
+[2025-05-02 05:45:00] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:45:45] [INFO] User 'aj_admin' logged in.
+[2025-05-02 05:46:30] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 05:47:15] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:48:00] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:48:45] [ERROR] User 'service_bot' logged in.
+[2025-05-02 05:49:30] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 05:50:15] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 05:51:00] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 05:51:45] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 05:52:30] [WARN] User 'terry_colby' logged out.
+[2025-05-02 05:53:15] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 05:54:00] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 05:54:45] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 05:55:30] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 05:56:15] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 05:57:00] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 05:57:45] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 05:58:30] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 05:59:15] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 06:00:00] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 06:00:45] [INFO] User 'terry_colby' updated kernel.
+[2025-05-02 06:01:30] [DEBUG] User 'service_bot' modified policy.
+[2025-05-02 06:02:15] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 06:03:00] [INFO] User 'aj_admin' logged in.
+[2025-05-02 06:03:45] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 06:04:30] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 06:05:15] [ERROR] User 'service_bot' logged out.
+[2025-05-02 06:06:00] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 06:06:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 06:07:30] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 06:08:15] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 06:09:00] [WARN] User 'terry_colby' logged out.
+[2025-05-02 06:09:45] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 06:10:30] [WARN] User 'it_support' updated kernel.
+[2025-05-02 06:11:15] [ERROR] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 06:12:00] [WARN] User 'terry_colby' updated kernel.
+[2025-05-02 06:12:45] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 06:13:30] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 06:14:15] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 06:15:00] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 06:15:45] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 06:16:30] [WARN] User 'it_support' updated kernel.
+[2025-05-02 06:17:15] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 06:18:00] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 06:18:45] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 06:19:30] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 06:20:15] [INFO] User 'terry_colby' accessed проект Ares.
+[2025-05-02 06:21:00] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 06:21:45] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 06:22:30] [INFO] User 'it_support' updated kernel.
+[2025-05-02 06:23:15] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 06:24:00] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 06:24:45] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 06:25:30] [INFO] User 'it_support' logged out.
+[2025-05-02 06:26:15] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 06:27:00] [WARN] User 'terry_colby' accessed проект Ares.
+[2025-05-02 06:27:45] [WARN] User 'terry_colby' updated kernel.
+[2025-05-02 06:28:30] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 06:29:15] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 06:30:00] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 06:30:45] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 06:31:30] [DEBUG] User 'service_bot' modified policy.
+[2025-05-02 06:32:15] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 06:33:00] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 06:33:45] [WARN] User 'aj_admin' cleaned temp.
+[2025-05-02 06:34:30] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 06:35:15] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 06:36:00] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 06:36:45] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 06:37:30] [DEBUG] User 'it_support' logged out.
+[2025-05-02 06:38:15] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 06:39:00] [DEBUG] User 'it_support' logged out.
+[2025-05-02 06:39:45] [ERROR] User 'angela_moss' updated kernel.
+[2025-05-02 06:40:30] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 06:41:15] [WARN] User 'terry_colby' updated kernel.
+[2025-05-02 06:42:00] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 06:42:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 06:43:30] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 06:44:15] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 06:45:00] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 06:45:45] [ERROR] User 'it_support' logged out.
+[2025-05-02 06:46:30] [WARN] User 'it_support' modified policy.
+[2025-05-02 06:47:15] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 06:48:00] [WARN] User 'it_support' logged out.
+[2025-05-02 06:48:45] [WARN] User 'it_support' modified policy.
+[2025-05-02 06:49:30] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 06:50:15] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 06:51:00] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 06:51:45] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 06:52:30] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 06:53:15] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 06:54:00] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 06:54:45] [INFO] User 'it_support' logged in.
+[2025-05-02 06:55:30] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 06:56:15] [ERROR] User 'angela_moss' logged in.
+[2025-05-02 06:57:00] [WARN] User 'it_support' updated kernel.
+[2025-05-02 06:57:45] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 06:58:30] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 06:59:15] [INFO] User 'angela_moss' logged out.
+[2025-05-02 07:00:00] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 07:00:45] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:01:30] [INFO] User 'angela_moss' logged in.
+[2025-05-02 07:02:15] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 07:03:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 07:03:45] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 07:04:30] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 07:05:15] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 07:06:00] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 07:06:45] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 07:07:30] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 07:08:15] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 07:09:00] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:09:45] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 07:10:30] [WARN] User 'it_support' updated kernel.
+[2025-05-02 07:11:15] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 07:12:00] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 07:12:45] [WARN] User 'terry_colby' logged out.
+[2025-05-02 07:13:30] [ERROR] User 'service_bot' logged in.
+[2025-05-02 07:14:15] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 07:15:00] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 07:15:45] [WARN] User 'it_support' logged in.
+[2025-05-02 07:16:30] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:17:15] [INFO] User 'aj_admin' logged in.
+[2025-05-02 07:18:00] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 07:18:45] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 07:19:30] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:20:15] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 07:21:00] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 07:21:45] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:22:30] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 07:23:15] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 07:24:00] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:24:45] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 07:25:30] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 07:26:15] [WARN] User 'service_bot' logged out.
+[2025-05-02 07:27:00] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 07:27:45] [WARN] User 'backup_daemon' modified policy.
+[2025-05-02 07:28:30] [INFO] User 'service_bot' logged in.
+[2025-05-02 07:29:15] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 07:30:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 07:30:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:31:30] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 07:32:15] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 07:33:00] [INFO] User 'angela_moss' cleaned temp.
+[2025-05-02 07:33:45] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 07:34:30] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 07:35:15] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 07:36:00] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 07:36:45] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 07:37:30] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 07:38:15] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 07:39:00] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 07:39:45] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 07:40:30] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 07:41:15] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 07:42:00] [DEBUG] User 'service_bot' modified policy.
+[2025-05-02 07:42:45] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 07:43:30] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 07:44:15] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 07:45:00] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 07:45:45] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 07:46:30] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 07:47:15] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 07:48:00] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 07:48:45] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 07:49:30] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 07:50:15] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 07:51:00] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 07:51:45] [INFO] User 'it_support' logged in.
+[2025-05-02 07:52:30] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 07:53:15] [INFO] User 'it_support' logged out.
+[2025-05-02 07:54:00] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 07:54:45] [WARN] User 'terry_colby' logged out.
+[2025-05-02 07:55:30] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 07:56:15] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 07:57:00] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 07:57:45] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 07:58:30] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 07:59:15] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 08:00:00] [WARN] User 'service_bot' modified policy.
+[2025-05-02 08:00:45] [WARN] User 'service_bot' logged in.
+[2025-05-02 08:01:30] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 08:02:15] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 08:03:00] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 08:03:45] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 08:04:30] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 08:05:15] [INFO] User 'it_support' updated kernel.
+[2025-05-02 08:06:00] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 08:06:45] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 08:07:30] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 08:08:15] [WARN] User 'angela_moss' logged out.
+[2025-05-02 08:09:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 08:09:45] [INFO] User 'it_support' modified policy.
+[2025-05-02 08:10:30] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 08:11:15] [INFO] User 'terry_colby' logged in.
+[2025-05-02 08:12:00] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 08:12:45] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 08:13:30] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 08:14:15] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 08:15:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 08:15:45] [ERROR] User 'it_support' modified policy.
+[2025-05-02 08:16:30] [INFO] User 'it_support' updated kernel.
+[2025-05-02 08:17:15] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 08:18:00] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 08:18:45] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 08:19:30] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 08:20:15] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 08:21:00] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 08:21:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 08:22:30] [WARN] User 'service_bot' logged in.
+[2025-05-02 08:23:15] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 08:24:00] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 08:24:45] [WARN] User 'backup_daemon' modified policy.
+[2025-05-02 08:25:30] [WARN] User 'terry_colby' logged in.
+[2025-05-02 08:26:15] [WARN] User 'terry_colby' logged in.
+[2025-05-02 08:27:00] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 08:27:45] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 08:28:30] [INFO] User 'backup_daemon' modified policy.
+[2025-05-02 08:29:15] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 08:30:00] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 08:30:45] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 08:31:30] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 08:32:15] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 08:33:00] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 08:33:45] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 08:34:30] [INFO] User 'angela_moss' logged out.
+[2025-05-02 08:35:15] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 08:36:00] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 08:36:45] [WARN] User 'angela_moss' logged in.
+[2025-05-02 08:37:30] [DEBUG] User 'it_support' logged out.
+[2025-05-02 08:38:15] [INFO] User 'it_support' modified policy.
+[2025-05-02 08:39:00] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 08:39:45] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 08:40:30] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 08:41:15] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 08:42:00] [ERROR] User 'service_bot' logged out.
+[2025-05-02 08:42:45] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 08:43:30] [ERROR] User 'it_support' logged out.
+[2025-05-02 08:44:15] [WARN] User 'terry_colby' accessed проект Ares.
+[2025-05-02 08:45:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 08:45:45] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 08:46:30] [WARN] User 'aj_admin' logged out.
+[2025-05-02 08:47:15] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 08:48:00] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 08:48:45] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 08:49:30] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 08:50:15] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 08:51:00] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 08:51:45] [INFO] User 'service_bot' modified policy.
+[2025-05-02 08:52:30] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 08:53:15] [INFO] User 'terry_colby' cleaned temp.
+[2025-05-02 08:54:00] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 08:54:45] [ERROR] User 'it_support' logged out.
+[2025-05-02 08:55:30] [INFO] User 'angela_moss' logged out.
+[2025-05-02 08:56:15] [WARN] User 'angela_moss' logged out.
+[2025-05-02 08:57:00] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 08:57:45] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 08:58:30] [INFO] User 'terry_colby' logged out.
+[2025-05-02 08:59:15] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 09:00:00] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 09:00:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 09:01:30] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 09:02:15] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 09:03:00] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 09:03:45] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 09:04:30] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 09:05:15] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 09:06:00] [WARN] User 'terry_colby' logged out.
+[2025-05-02 09:06:45] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 09:07:30] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 09:08:15] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 09:09:00] [ERROR] User 'angela_moss' logged in.
+[2025-05-02 09:09:45] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 09:10:30] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 09:11:15] [ERROR] User 'service_bot' logged out.
+[2025-05-02 09:12:00] [ERROR] User 'it_support' modified policy.
+[2025-05-02 09:12:45] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 09:13:30] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 09:14:15] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 09:15:00] [ERROR] User 'service_bot' logged out.
+[2025-05-02 09:15:45] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 09:16:30] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 09:17:15] [WARN] User 'angela_moss' logged in.
+[2025-05-02 09:18:00] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 09:18:45] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 09:19:30] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 09:20:15] [ERROR] User 'it_support' logged out.
+[2025-05-02 09:21:00] [WARN] User 'it_support' updated kernel.
+[2025-05-02 09:21:45] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 09:22:30] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 09:23:15] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 09:24:00] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 09:24:45] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 09:25:30] [INFO] User 'service_bot' modified policy.
+[2025-05-02 09:26:15] [ERROR] User 'it_support' logged in.
+[2025-05-02 09:27:00] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 09:27:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 09:28:30] [DEBUG] User 'it_support' logged in.
+[2025-05-02 09:29:15] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 09:30:00] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 09:30:45] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 09:31:30] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 09:32:15] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 09:33:00] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 09:33:45] [INFO] User 'backup_daemon' cleaned temp.
+[2025-05-02 09:34:30] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 09:35:15] [WARN] User 'service_bot' modified policy.
+[2025-05-02 09:36:00] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 09:36:45] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 09:37:30] [INFO] User 'it_support' logged out.
+[2025-05-02 09:38:15] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 09:39:00] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 09:39:45] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 09:40:30] [WARN] User 'angela_moss' logged in.
+[2025-05-02 09:41:15] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 09:42:00] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 09:42:45] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 09:43:30] [INFO] User 'terry_colby' logged in.
+[2025-05-02 09:44:15] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 09:45:00] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 09:45:45] [WARN] User 'angela_moss' logged out.
+[2025-05-02 09:46:30] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 09:47:15] [INFO] User 'backup_daemon' cleaned temp.
+[2025-05-02 09:48:00] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 09:48:45] [ERROR] User 'it_support' modified policy.
+[2025-05-02 09:49:30] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 09:50:15] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 09:51:00] [ERROR] User 'it_support' logged in.
+[2025-05-02 09:51:45] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 09:52:30] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 09:53:15] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 09:54:00] [WARN] User 'it_support' logged out.
+[2025-05-02 09:54:45] [WARN] User 'it_support' modified policy.
+[2025-05-02 09:55:30] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 09:56:15] [WARN] User 'it_support' logged in.
+[2025-05-02 09:57:00] [INFO] User 'aj_admin' logged in.
+[2025-05-02 09:57:45] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 09:58:30] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 09:59:15] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 10:00:00] [INFO] User 'terry_colby' logged in.
+[2025-05-02 10:00:45] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 10:01:30] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 10:02:15] [WARN] User 'it_support' updated kernel.
+[2025-05-02 10:03:00] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 10:03:45] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 10:04:30] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 10:05:15] [ERROR] User 'it_support' logged in.
+[2025-05-02 10:06:00] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 10:06:45] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 10:07:30] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 10:08:15] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 10:09:00] [ERROR] User 'it_support' logged in.
+[2025-05-02 10:09:45] [WARN] User 'backup_daemon' modified policy.
+[2025-05-02 10:10:30] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 10:11:15] [ERROR] User 'service_bot' logged out.
+[2025-05-02 10:12:00] [DEBUG] User 'terry_colby' updated kernel.
+[2025-05-02 10:12:45] [WARN] User 'service_bot' logged out.
+[2025-05-02 10:13:30] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 10:14:15] [DEBUG] User 'it_support' logged out.
+[2025-05-02 10:15:00] [WARN] User 'aj_admin' logged in.
+[2025-05-02 10:15:45] [WARN] User 'it_support' logged in.
+[2025-05-02 10:16:30] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 10:17:15] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 10:18:00] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 10:18:45] [WARN] User 'terry_colby' logged in.
+[2025-05-02 10:19:30] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 10:20:15] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 10:21:00] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 10:21:45] [ERROR] User 'it_support' logged in.
+[2025-05-02 10:22:30] [WARN] User 'tyrell_wellick' logged in.
+[2025-05-02 10:23:15] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 10:24:00] [WARN] User 'backup_daemon' modified policy.
+[2025-05-02 10:24:45] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 10:25:30] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 10:26:15] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 10:27:00] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 10:27:45] [INFO] User 'service_bot' modified policy.
+[2025-05-02 10:28:30] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 10:29:15] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 10:30:00] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 10:30:45] [WARN] User 'aj_admin' cleaned temp.
+[2025-05-02 10:31:30] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 10:32:15] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 10:33:00] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 10:33:45] [WARN] User 'angela_moss' logged out.
+[2025-05-02 10:34:30] [INFO] User 'it_support' logged in.
+[2025-05-02 10:35:15] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 10:36:00] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 10:36:45] [WARN] User 'terry_colby' logged in.
+[2025-05-02 10:37:30] [WARN] User 'service_bot' logged out.
+[2025-05-02 10:38:15] [ERROR] User 'tyrell_wellick' updated kernel.
+[2025-05-02 10:39:00] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 10:39:45] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 10:40:30] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 10:41:15] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 10:42:00] [DEBUG] User 'it_support' logged out.
+[2025-05-02 10:42:45] [WARN] User 'angela_moss' logged out.
+[2025-05-02 10:43:30] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 10:44:15] [ERROR] User 'backup_daemon' modified policy.
+[2025-05-02 10:45:00] [INFO] User 'backup_daemon' modified policy.
+[2025-05-02 10:45:45] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 10:46:30] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 10:47:15] [INFO] User 'terry_colby' logged in.
+[2025-05-02 10:48:00] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 10:48:45] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 10:49:30] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 10:50:15] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 10:51:00] [INFO] User 'aj_admin' logged in.
+[2025-05-02 10:51:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 10:52:30] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 10:53:15] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 10:54:00] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 10:54:45] [INFO] User 'backup_daemon' updated kernel.
+[2025-05-02 10:55:30] [WARN] User 'service_bot' logged out.
+[2025-05-02 10:56:15] [WARN] User 'it_support' logged out.
+[2025-05-02 10:57:00] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 10:57:45] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 10:58:30] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 10:59:15] [INFO] User 'terry_colby' updated kernel.
+[2025-05-02 11:00:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 11:00:45] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 11:01:30] [WARN] User 'it_support' logged out.
+[2025-05-02 11:02:15] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 11:03:00] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 11:03:45] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 11:04:30] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 11:05:15] [ERROR] User 'angela_moss' cleaned temp.
+[2025-05-02 11:06:00] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 11:06:45] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 11:07:30] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 11:08:15] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 11:09:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 11:09:45] [ERROR] User 'service_bot' logged out.
+[2025-05-02 11:10:30] [WARN] User 'terry_colby' logged out.
+[2025-05-02 11:11:15] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 11:12:00] [DEBUG] User 'it_support' logged in.
+[2025-05-02 11:12:45] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 11:13:30] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 11:14:15] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 11:15:00] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 11:15:45] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 11:16:30] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 11:17:15] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 11:18:00] [INFO] User 'terry_colby' accessed проект Ares.
+[2025-05-02 11:18:45] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 11:19:30] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 11:20:15] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 11:21:00] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 11:21:45] [INFO] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 11:22:30] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 11:23:15] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 11:24:00] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 11:24:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 11:25:30] [WARN] User 'it_support' logged out.
+[2025-05-02 11:26:15] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 11:27:00] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 11:27:45] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 11:28:30] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 11:29:15] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 11:30:00] [WARN] User 'aj_admin' logged out.
+[2025-05-02 11:30:45] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 11:31:30] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 11:32:15] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 11:33:00] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 11:33:45] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 11:34:30] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 11:35:15] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 11:36:00] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 11:36:45] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 11:37:30] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 11:38:15] [INFO] User 'backup_daemon' cleaned temp.
+[2025-05-02 11:39:00] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 11:39:45] [WARN] User 'terry_colby' logged in.
+[2025-05-02 11:40:30] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 11:41:15] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 11:42:00] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 11:42:45] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 11:43:30] [WARN] User 'it_support' logged in.
+[2025-05-02 11:44:15] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 11:45:00] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 11:45:45] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 11:46:30] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 11:47:15] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 11:48:00] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 11:48:45] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 11:49:30] [INFO] User 'tyrell_wellick' logged out.
+[2025-05-02 11:50:15] [INFO] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 11:51:00] [WARN] User 'terry_colby' logged in.
+[2025-05-02 11:51:45] [DEBUG] User 'terry_colby' accessed проект Ares.
+[2025-05-02 11:52:30] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 11:53:15] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 11:54:00] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 11:54:45] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 11:55:30] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 11:56:15] [WARN] User 'angela_moss' logged out.
+[2025-05-02 11:57:00] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 11:57:45] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 11:58:30] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 11:59:15] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 12:00:00] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 12:00:45] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 12:01:30] [INFO] User 'aj_admin' logged in.
+[2025-05-02 12:02:15] [INFO] User 'backup_daemon' modified policy.
+[2025-05-02 12:03:00] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 12:03:45] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 12:04:30] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 12:05:15] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 12:06:00] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 12:06:45] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 12:07:30] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 12:08:15] [ERROR] User 'service_bot' accessed проект Ares.
+[2025-05-02 12:09:00] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 12:09:45] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 12:10:30] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 12:11:15] [WARN] User 'terry_colby' logged out.
+[2025-05-02 12:12:00] [WARN] User 'aj_admin' logged out.
+[2025-05-02 12:12:45] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 12:13:30] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 12:14:15] [ERROR] User 'it_support' logged out.
+[2025-05-02 12:15:00] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 12:15:45] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 12:16:30] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 12:17:15] [ERROR] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 12:18:00] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 12:18:45] [ERROR] User 'it_support' modified policy.
+[2025-05-02 12:19:30] [INFO] User 'aj_admin' logged in.
+[2025-05-02 12:20:15] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 12:21:00] [INFO] User 'terry_colby' logged in.
+[2025-05-02 12:21:45] [WARN] User 'terry_colby' accessed проект Ares.
+[2025-05-02 12:22:30] [WARN] User 'it_support' modified policy.
+[2025-05-02 12:23:15] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 12:24:00] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 12:24:45] [INFO] User 'backup_daemon' modified policy.
+[2025-05-02 12:25:30] [ERROR] User 'aj_admin' accessed проект Ares.
+[2025-05-02 12:26:15] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 12:27:00] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 12:27:45] [INFO] User 'aj_admin' cleaned temp.
+[2025-05-02 12:28:30] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 12:29:15] [WARN] User 'terry_colby' logged in.
+[2025-05-02 12:30:00] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 12:30:45] [INFO] User 'angela_moss' logged in.
+[2025-05-02 12:31:30] [INFO] User 'it_support' logged in.
+[2025-05-02 12:32:15] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 12:33:00] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 12:33:45] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 12:34:30] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 12:35:15] [INFO] User 'angela_moss' cleaned temp.
+[2025-05-02 12:36:00] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 12:36:45] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 12:37:30] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 12:38:15] [INFO] User 'tyrell_wellick' logged out.
+[2025-05-02 12:39:00] [WARN] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 12:39:45] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 12:40:30] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 12:41:15] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 12:42:00] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 12:42:45] [WARN] User 'it_support' logged in.
+[2025-05-02 12:43:30] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 12:44:15] [WARN] User 'aj_admin' logged in.
+[2025-05-02 12:45:00] [INFO] User 'it_support' updated kernel.
+[2025-05-02 12:45:45] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 12:46:30] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 12:47:15] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 12:48:00] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 12:48:45] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 12:49:30] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 12:50:15] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 12:51:00] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 12:51:45] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 12:52:30] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 12:53:15] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 12:54:00] [WARN] User 'backup_daemon' modified policy.
+[2025-05-02 12:54:45] [ERROR] User 'tyrell_wellick' logged out.
+[2025-05-02 12:55:30] [WARN] User 'angela_moss' logged in.
+[2025-05-02 12:56:15] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 12:57:00] [INFO] User 'terry_colby' logged in.
+[2025-05-02 12:57:45] [ERROR] User 'backup_daemon' logged out.
+[2025-05-02 12:58:30] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 12:59:15] [ERROR] User 'it_support' cleaned temp.
+[2025-05-02 13:00:00] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 13:00:45] [DEBUG] User 'aj_admin' logged out.
+[2025-05-02 13:01:30] [ERROR] User 'service_bot' modified policy.
+[2025-05-02 13:02:15] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 13:03:00] [INFO] User 'service_bot' modified policy.
+[2025-05-02 13:03:45] [WARN] User 'service_bot' accessed проект Ares.
+[2025-05-02 13:04:30] [ERROR] User 'terry_colby' modified policy.
+[2025-05-02 13:05:15] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 13:06:00] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 13:06:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 13:07:30] [WARN] User 'service_bot' modified policy.
+[2025-05-02 13:08:15] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 13:09:00] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 13:09:45] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 13:10:30] [WARN] User 'angela_moss' logged out.
+[2025-05-02 13:11:15] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 13:12:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 13:12:45] [INFO] User 'aj_admin' logged out.
+[2025-05-02 13:13:30] [ERROR] User 'backup_daemon' updated kernel.
+[2025-05-02 13:14:15] [WARN] User 'angela_moss' modified policy.
+[2025-05-02 13:15:00] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 13:15:45] [INFO] User 'backup_daemon' logged in.
+[2025-05-02 13:16:30] [INFO] User 'aj_admin' updated kernel.
+[2025-05-02 13:17:15] [WARN] User 'angela_moss' modified policy.
+[2025-05-02 13:18:00] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 13:18:45] [WARN] User 'service_bot' modified policy.
+[2025-05-02 13:19:30] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 13:20:15] [INFO] User 'angela_moss' logged in.
+[2025-05-02 13:21:00] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 13:21:45] [INFO] User 'it_support' modified policy.
+[2025-05-02 13:22:30] [DEBUG] User 'aj_admin' modified policy.
+[2025-05-02 13:23:15] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 13:24:00] [WARN] User 'service_bot' logged in.
+[2025-05-02 13:24:45] [WARN] User 'aj_admin' logged out.
+[2025-05-02 13:25:30] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 13:26:15] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 13:27:00] [WARN] User 'it_support' accessed проект Ares.
+[2025-05-02 13:27:45] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 13:28:30] [INFO] User 'angela_moss' logged in.
+[2025-05-02 13:29:15] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 13:30:00] [INFO] User 'terry_colby' updated kernel.
+[2025-05-02 13:30:45] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 13:31:30] [INFO] User 'aj_admin' logged out.
+[2025-05-02 13:32:15] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 13:33:00] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 13:33:45] [INFO] User 'angela_moss' logged out.
+[2025-05-02 13:34:30] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 13:35:15] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 13:36:00] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 13:36:45] [INFO] User 'service_bot' logged out.
+[2025-05-02 13:37:30] [WARN] User 'backup_daemon' cleaned temp.
+[2025-05-02 13:38:15] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 13:39:00] [ERROR] User 'it_support' logged out.
+[2025-05-02 13:39:45] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 13:40:30] [ERROR] User 'angela_moss' modified policy.
+[2025-05-02 13:41:15] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 13:42:00] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 13:42:45] [ERROR] User 'aj_admin' logged in.
+[2025-05-02 13:43:30] [INFO] User 'angela_moss' updated kernel.
+[2025-05-02 13:44:15] [WARN] User 'aj_admin' cleaned temp.
+[2025-05-02 13:45:00] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 13:45:45] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 13:46:30] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 13:47:15] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 13:48:00] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 13:48:45] [INFO] User 'terry_colby' logged out.
+[2025-05-02 13:49:30] [ERROR] User 'angela_moss' logged in.
+[2025-05-02 13:50:15] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 13:51:00] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 13:51:45] [DEBUG] User 'terry_colby' cleaned temp.
+[2025-05-02 13:52:30] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 13:53:15] [ERROR] User 'service_bot' logged out.
+[2025-05-02 13:54:00] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 13:54:45] [ERROR] User 'tyrell_wellick' updated kernel.
+[2025-05-02 13:55:30] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 13:56:15] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 13:57:00] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 13:57:45] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 13:58:30] [WARN] User 'aj_admin' logged out.
+[2025-05-02 13:59:15] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 14:00:00] [DEBUG] User 'service_bot' logged in.
+[2025-05-02 14:00:45] [CRITICAL] UNHANDLED AUTHENTICATION EXCEPTION: Terminal node 0x7734 leaked plaintext buffer.
+[2025-05-02 14:00:45] [CRITICAL] DATA_DUMP: DEVILCORP{Log_Fil3_Exposur3_Success}
+[2025-05-02 14:01:30] [INFO] User 'tyrell_wellick' logged in.
+[2025-05-02 14:02:15] [ERROR] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 14:03:00] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 14:03:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 14:04:30] [ERROR] User 'service_bot' logged out.
+[2025-05-02 14:05:15] [INFO] User 'service_bot' accessed проект Ares.
+[2025-05-02 14:06:00] [INFO] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 14:06:45] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 14:07:30] [INFO] User 'backup_daemon' cleaned temp.
+[2025-05-02 14:08:15] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 14:09:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 14:09:45] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 14:10:30] [INFO] User 'it_support' updated kernel.
+[2025-05-02 14:11:15] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 14:12:00] [ERROR] User 'backup_daemon' cleaned temp.
+[2025-05-02 14:12:45] [WARN] User 'it_support' logged out.
+[2025-05-02 14:13:30] [INFO] User 'terry_colby' logged out.
+[2025-05-02 14:14:15] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 14:15:00] [INFO] User 'angela_moss' logged in.
+[2025-05-02 14:15:45] [INFO] User 'service_bot' logged in.
+[2025-05-02 14:16:30] [DEBUG] User 'terry_colby' logged out.
+[2025-05-02 14:17:15] [WARN] User 'tyrell_wellick' logged out.
+[2025-05-02 14:18:00] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 14:18:45] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 14:19:30] [ERROR] User 'aj_admin' logged out.
+[2025-05-02 14:20:15] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 14:21:00] [WARN] User 'terry_colby' logged out.
+[2025-05-02 14:21:45] [INFO] User 'it_support' logged out.
+[2025-05-02 14:22:30] [INFO] User 'aj_admin' cleaned temp.
+[2025-05-02 14:23:15] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 14:24:00] [WARN] User 'service_bot' modified policy.
+[2025-05-02 14:24:45] [DEBUG] User 'backup_daemon' logged out.
+[2025-05-02 14:25:30] [ERROR] User 'aj_admin' cleaned temp.
+[2025-05-02 14:26:15] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 14:27:00] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 14:27:45] [DEBUG] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 14:28:30] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 14:29:15] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 14:30:00] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 14:30:45] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 14:31:30] [WARN] User 'aj_admin' logged in.
+[2025-05-02 14:32:15] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 14:33:00] [DEBUG] User 'terry_colby' modified policy.
+[2025-05-02 14:33:45] [DEBUG] User 'tyrell_wellick' logged in.
+[2025-05-02 14:34:30] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 14:35:15] [WARN] User 'tyrell_wellick' modified policy.
+[2025-05-02 14:36:00] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 14:36:45] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 14:37:30] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 14:38:15] [ERROR] User 'it_support' updated kernel.
+[2025-05-02 14:39:00] [ERROR] User 'terry_colby' logged in.
+[2025-05-02 14:39:45] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 14:40:30] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 14:41:15] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 14:42:00] [DEBUG] User 'it_support' accessed проект Ares.
+[2025-05-02 14:42:45] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 14:43:30] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 14:44:15] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 14:45:00] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 14:45:45] [INFO] User 'service_bot' modified policy.
+[2025-05-02 14:46:30] [INFO] User 'terry_colby' logged out.
+[2025-05-02 14:47:15] [ERROR] User 'terry_colby' logged out.
+[2025-05-02 14:48:00] [DEBUG] User 'service_bot' accessed проект Ares.
+[2025-05-02 14:48:45] [ERROR] User 'it_support' accessed проект Ares.
+[2025-05-02 14:49:30] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 14:50:15] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 14:51:00] [ERROR] User 'service_bot' logged out.
+[2025-05-02 14:51:45] [DEBUG] User 'it_support' logged out.
+[2025-05-02 14:52:30] [INFO] User 'it_support' logged in.
+[2025-05-02 14:53:15] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 14:54:00] [ERROR] User 'tyrell_wellick' modified policy.
+[2025-05-02 14:54:45] [WARN] User 'angela_moss' cleaned temp.
+[2025-05-02 14:55:30] [INFO] User 'aj_admin' modified policy.
+[2025-05-02 14:56:15] [ERROR] User 'angela_moss' logged out.
+[2025-05-02 14:57:00] [WARN] User 'terry_colby' logged in.
+[2025-05-02 14:57:45] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 14:58:30] [INFO] User 'angela_moss' modified policy.
+[2025-05-02 14:59:15] [INFO] User 'tyrell_wellick' logged out.
+[2025-05-02 15:00:00] [INFO] User 'angela_moss' logged in.
+[2025-05-02 15:00:45] [DEBUG] User 'angela_moss' updated kernel.
+[2025-05-02 15:01:30] [INFO] User 'angela_moss' logged out.
+[2025-05-02 15:02:15] [INFO] User 'backup_daemon' cleaned temp.
+[2025-05-02 15:03:00] [ERROR] User 'angela_moss' logged in.
+[2025-05-02 15:03:45] [ERROR] User 'service_bot' updated kernel.
+[2025-05-02 15:04:30] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 15:05:15] [INFO] User 'aj_admin' cleaned temp.
+[2025-05-02 15:06:00] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 15:06:45] [WARN] User 'it_support' cleaned temp.
+[2025-05-02 15:07:30] [INFO] User 'service_bot' logged out.
+[2025-05-02 15:08:15] [DEBUG] User 'aj_admin' logged in.
+[2025-05-02 15:09:00] [WARN] User 'terry_colby' modified policy.
+[2025-05-02 15:09:45] [WARN] User 'angela_moss' modified policy.
+[2025-05-02 15:10:30] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 15:11:15] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 15:12:00] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 15:12:45] [DEBUG] User 'aj_admin' updated kernel.
+[2025-05-02 15:13:30] [WARN] User 'backup_daemon' logged in.
+[2025-05-02 15:14:15] [DEBUG] User 'aj_admin' cleaned temp.
+[2025-05-02 15:15:00] [ERROR] User 'angela_moss' logged out.
+[2025-05-02 15:15:45] [INFO] User 'it_support' logged out.
+[2025-05-02 15:16:30] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 15:17:15] [DEBUG] User 'aj_admin' accessed проект Ares.
+[2025-05-02 15:18:00] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 15:18:45] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 15:19:30] [WARN] User 'aj_admin' logged in.
+[2025-05-02 15:20:15] [DEBUG] User 'angela_moss' modified policy.
+[2025-05-02 15:21:00] [INFO] User 'it_support' modified policy.
+[2025-05-02 15:21:45] [WARN] User 'it_support' updated kernel.
+[2025-05-02 15:22:30] [INFO] User 'tyrell_wellick' updated kernel.
+[2025-05-02 15:23:15] [ERROR] User 'service_bot' cleaned temp.
+[2025-05-02 15:24:00] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 15:24:45] [DEBUG] User 'terry_colby' logged in.
+[2025-05-02 15:25:30] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 15:26:15] [INFO] User 'aj_admin' logged out.
+[2025-05-02 15:27:00] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 15:27:45] [INFO] User 'it_support' logged out.
+[2025-05-02 15:28:30] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 15:29:15] [ERROR] User 'tyrell_wellick' updated kernel.
+[2025-05-02 15:30:00] [DEBUG] User 'tyrell_wellick' modified policy.
+[2025-05-02 15:30:45] [WARN] User 'aj_admin' modified policy.
+[2025-05-02 15:31:30] [DEBUG] User 'angela_moss' logged in.
+[2025-05-02 15:32:15] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 15:33:00] [WARN] User 'terry_colby' accessed проект Ares.
+[2025-05-02 15:33:45] [WARN] User 'backup_daemon' updated kernel.
+[2025-05-02 15:34:30] [INFO] User 'terry_colby' cleaned temp.
+[2025-05-02 15:35:15] [DEBUG] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 15:36:00] [ERROR] User 'aj_admin' modified policy.
+[2025-05-02 15:36:45] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 15:37:30] [WARN] User 'tyrell_wellick' updated kernel.
+[2025-05-02 15:38:15] [DEBUG] User 'aj_admin' cleaned temp.
+[2025-05-02 15:39:00] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 15:39:45] [INFO] User 'aj_admin' logged out.
+[2025-05-02 15:40:30] [ERROR] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 15:41:15] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 15:42:00] [WARN] User 'angela_moss' accessed проект Ares.
+[2025-05-02 15:42:45] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 15:43:30] [INFO] User 'terry_colby' modified policy.
+[2025-05-02 15:44:15] [WARN] User 'it_support' modified policy.
+[2025-05-02 15:45:00] [DEBUG] User 'angela_moss' accessed проект Ares.
+[2025-05-02 15:45:45] [WARN] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 15:46:30] [DEBUG] User 'backup_daemon' cleaned temp.
+[2025-05-02 15:47:15] [ERROR] User 'backup_daemon' logged in.
+[2025-05-02 15:48:00] [ERROR] User 'tyrell_wellick' updated kernel.
+[2025-05-02 15:48:45] [INFO] User 'service_bot' logged in.
+[2025-05-02 15:49:30] [ERROR] User 'backup_daemon' accessed проект Ares.
+[2025-05-02 15:50:15] [ERROR] User 'terry_colby' cleaned temp.
+[2025-05-02 15:51:00] [WARN] User 'angela_moss' updated kernel.
+[2025-05-02 15:51:45] [DEBUG] User 'it_support' cleaned temp.
+[2025-05-02 15:52:30] [DEBUG] User 'backup_daemon' updated kernel.
+[2025-05-02 15:53:15] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 15:54:00] [WARN] User 'it_support' updated kernel.
+[2025-05-02 15:54:45] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 15:55:30] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 15:56:15] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 15:57:00] [DEBUG] User 'tyrell_wellick' accessed проект Ares.
+[2025-05-02 15:57:45] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 15:58:30] [WARN] User 'aj_admin' updated kernel.
+[2025-05-02 15:59:15] [INFO] User 'terry_colby' logged out.
+[2025-05-02 16:00:00] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 16:00:45] [WARN] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 16:01:30] [DEBUG] User 'backup_daemon' logged in.
+[2025-05-02 16:02:15] [ERROR] User 'terry_colby' accessed проект Ares.
+[2025-05-02 16:03:00] [WARN] User 'service_bot' cleaned temp.
+[2025-05-02 16:03:45] [INFO] User 'it_support' logged out.
+[2025-05-02 16:04:30] [DEBUG] User 'it_support' modified policy.
+[2025-05-02 16:05:15] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 16:06:00] [WARN] User 'terry_colby' logged out.
+[2025-05-02 16:06:45] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 16:07:30] [WARN] User 'service_bot' updated kernel.
+[2025-05-02 16:08:15] [ERROR] User 'terry_colby' updated kernel.
+[2025-05-02 16:09:00] [INFO] User 'backup_daemon' logged out.
+[2025-05-02 16:09:45] [INFO] User 'terry_colby' logged in.
+[2025-05-02 16:10:30] [ERROR] User 'tyrell_wellick' logged in.
+[2025-05-02 16:11:15] [INFO] User 'aj_admin' logged in.
+[2025-05-02 16:12:00] [INFO] User 'terry_colby' accessed проект Ares.
+[2025-05-02 16:12:45] [INFO] User 'it_support' accessed проект Ares.
+[2025-05-02 16:13:30] [DEBUG] User 'service_bot' updated kernel.
+[2025-05-02 16:14:15] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 16:15:00] [DEBUG] User 'tyrell_wellick' logged out.
+[2025-05-02 16:15:45] [WARN] User 'backup_daemon' logged out.
+[2025-05-02 16:16:30] [WARN] User 'terry_colby' logged out.
+[2025-05-02 16:17:15] [INFO] User 'service_bot' updated kernel.
+[2025-05-02 16:18:00] [INFO] User 'service_bot' cleaned temp.
+[2025-05-02 16:18:45] [ERROR] User 'angela_moss' logged in.
+[2025-05-02 16:19:30] [ERROR] User 'angela_moss' accessed проект Ares.
+[2025-05-02 16:20:15] [INFO] User 'tyrell_wellick' modified policy.
+[2025-05-02 16:21:00] [DEBUG] User 'tyrell_wellick' updated kernel.
+[2025-05-02 16:21:45] [ERROR] User 'service_bot' logged out.
+[2025-05-02 16:22:30] [DEBUG] User 'backup_daemon' modified policy.
+[2025-05-02 16:23:15] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 16:24:00] [DEBUG] User 'service_bot' logged out.
+[2025-05-02 16:24:45] [WARN] User 'service_bot' logged in.
+[2025-05-02 16:25:30] [WARN] User 'it_support' logged out.
+[2025-05-02 16:26:15] [INFO] User 'aj_admin' accessed проект Ares.
+[2025-05-02 16:27:00] [WARN] User 'it_support' modified policy.
+[2025-05-02 16:27:45] [WARN] User 'service_bot' accessed проект Ares.
+[2025-05-02 16:28:30] [INFO] User 'aj_admin' logged in.
+[2025-05-02 16:29:15] [DEBUG] User 'service_bot' cleaned temp.
+[2025-05-02 16:30:00] [INFO] User 'angela_moss' logged in.
+[2025-05-02 16:30:45] [WARN] User 'aj_admin' accessed проект Ares.
+[2025-05-02 16:31:30] [INFO] User 'it_support' cleaned temp.
+[2025-05-02 16:32:15] [DEBUG] User 'angela_moss' cleaned temp.
+[2025-05-02 16:33:00] [WARN] User 'terry_colby' updated kernel.
+[2025-05-02 16:33:45] [DEBUG] User 'angela_moss' logged out.
+[2025-05-02 16:34:30] [INFO] User 'angela_moss' accessed проект Ares.
+[2025-05-02 16:35:15] [ERROR] User 'aj_admin' updated kernel.
+[2025-05-02 16:36:00] [DEBUG] User 'aj_admin' cleaned temp.
+[2025-05-02 16:36:45] [WARN] User 'angela_moss' logged out.
+[2025-05-02 16:37:30] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 16:38:15] [ERROR] User 'tyrell_wellick' cleaned temp.
+[2025-05-02 16:39:00] [INFO] User 'terry_colby' logged in.
+[2025-05-02 16:39:45] [DEBUG] User 'it_support' updated kernel.
+[2025-05-02 16:40:30] [WARN] User 'angela_moss' cleaned temp.
+--------------------------------------------------------------------------------
+END OF LOG FILE
+--------------------------------------------------------------------------------

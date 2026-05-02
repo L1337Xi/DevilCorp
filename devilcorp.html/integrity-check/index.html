@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | System Monitor</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed; background-size: cover; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .monitor-card { background: rgba(13, 17, 23, 0.95); border: 1px solid var(--border); border-radius: 8px; padding: 40px; width: 100%; max-width: 700px; backdrop-filter: blur(10px); text-align: center; }
+        h1 { color: var(--accent); font-size: 1.2rem; letter-spacing: 3px; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 30px; }
+        .status-box { background: #000; border: 1px solid #222; padding: 20px; border-radius: 4px; font-size: 0.9rem; text-align: left; line-height: 1.8; }
+        .accent { color: var(--accent); }
+        .flag-revealed { margin-top: 30px; padding: 20px; border: 2px dashed var(--accent); background: rgba(159, 239, 0, 0.05); color: var(--accent); font-weight: bold; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="monitor-card">
+        <h1>SYSTEM_INTEGRITY_MONITOR</h1>
+        <p style="font-size: 0.8rem; color: #9ea4b0; margin-bottom: 25px;">Node Status: <span class="accent">CONNECTED</span></p>
+        
+        <div class="status-box" id="status-display">
+            [IDENT] Checking session integrity...<br>
+            [AUTH] Fetching role from dc_auth_obj...<br>
+            [WARN] Authenticating as: <span style="color:#888">GUEST_USER</span>
+        </div>
+
+        <div id="flag-area"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial vulnerable cookie if not exists
+            if (!document.cookie.includes('dc_auth_obj')) {
+                const initialObj = JSON.stringify({ "user": "jam3s", "role": "user", "access": "restricted" });
+                const encoded = btoa(initialObj);
+                document.cookie = `dc_auth_obj=${encoded}; path=/`;
+            }
+
+            // Check status with server
+            fetch('/api/integrity-status')
+                .then(res => res.json())
+                .then(data => {
+                    const display = document.getElementById('status-display');
+                    display.innerHTML = `
+                        [IDENT] Node: DC-INTEGRITY-01<br>
+                        [AUTH] SESSION_ROLE: <span class="${data.access_level === 'ADMINISTRATOR' ? 'accent' : ''}">${data.access_level}</span><br>
+                        [MSG] ${data.message || 'Privileged session confirmed.'}
+                    `;
+
+                    if (data.flag) {
+                        document.getElementById('flag-area').innerHTML = `
+                            <div class="flag-revealed">
+                                [SUCCESS] INTEGRITY CHECK BYPASSED.<br>
+                                FLAG: ${data.flag}
+                            </div>
+                        `;
+                    }
+                });
+        });
+    </script>
+</body>
+</html>

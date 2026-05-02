@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | CI/CD Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --warn: #ffcc00; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .pipeline-card { background: var(--bg-overlay); border: 1px solid var(--border); border-radius: 8px; padding: 30px; background-color: rgba(13, 17, 23, 0.9); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .build-row { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid var(--border); align-items: center; cursor: pointer; transition: background 0.2s; }
+        .build-row:hover { background: rgba(159, 239, 0, 0.05); }
+        .status-tag { padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+        .status-success { background: rgba(159, 239, 0, 0.2); color: var(--accent); border: 1px solid var(--accent); }
+        .status-warn { background: rgba(255, 204, 0, 0.2); color: var(--warn); border: 1px solid var(--warn); }
+        
+        .log-viewer { margin-top: 30px; background: #000; border: 1px solid var(--border); border-radius: 4px; display: none; }
+        .log-header { background: #111; padding: 10px 20px; border-bottom: 1px solid var(--border); font-size: 0.75rem; color: #888; display: flex; justify-content: space-between; }
+        .log-body { padding: 20px; font-size: 0.8rem; color: #ccc; line-height: 1.5; height: 400px; overflow-y: auto; white-space: pre-wrap; }
+        .log-warn { color: var(--warn); font-weight: bold; }
+        .log-flag { color: var(--accent); font-weight: bold; background: rgba(159, 239, 0, 0.1); padding: 2px 5px; }
+        .accent { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span class="accent">CORP</span> BUILD_SERVER v4.1</div>
+        <div style="font-size: 0.7rem; color: #888;">NODE_ID: DC-BLD-PROD-01</div>
+    </header>
+
+    <div class="container">
+        <div class="pipeline-card" id="pipeline-list">
+            <h2 style="margin-top:0; font-size: 1.2rem; border-bottom: 1px solid var(--border); padding-bottom: 15px;">Active Build Pipelines</h2>
+            <div class="build-row">
+                <div>
+                    <div style="font-weight:bold; font-size:0.9rem;">Core-API-v2</div>
+                    <div style="font-size:0.7rem; color:#555;">Branch: master | Commit: 4f2e1a</div>
+                </div>
+                <span class="status-tag status-success">SUCCESS</span>
+            </div>
+            <div class="build-row" onclick="showLogs('auth')">
+                <div>
+                    <div style="font-weight:bold; font-size:0.9rem;">Auth-Service</div>
+                    <div style="font-size:0.7rem; color:#555;">Branch: hotfix-auth | Commit: 9b2d3c</div>
+                </div>
+                <span class="status-tag status-warn">COMPLETED WITH WARNINGS</span>
+            </div>
+            <div class="build-row">
+                <div>
+                    <div style="font-weight:bold; font-size:0.9rem;">Frontend-Web</div>
+                    <div style="font-size:0.7rem; color:#555;">Branch: master | Commit: a1b2c3</div>
+                </div>
+                <span class="status-tag status-success">SUCCESS</span>
+            </div>
+        </div>
+
+        <div id="log-viewer" class="log-viewer">
+            <div class="log-header">
+                <span>BUILD_LOG: Auth-Service (9b2d3c)</span>
+                <span style="cursor:pointer" onclick="closeLogs()">[ CLOSE ]</span>
+            </div>
+            <div class="log-body" id="log-body">
+[INFO] Starting build for project 'Auth-Service'...
+[INFO] Environment: Production-Build-Agent-04
+[INFO] Checking out code from git@github.com:devilcorp/auth-service.git...
+[INFO] Resolving dependencies from package.json...
+[INFO] Found 142 dependencies.
+[INFO] Fetching @devilcorp/internal-ui...
+<span class="log-warn">[WARN] UNVERIFIED PACKAGE SOURCE: @devilcorp/internal-ui v99.9.9 found in public registry (npmjs.org).</span>
+<span class="log-warn">[WARN] Overriding internal version 1.0.4 with higher version 99.9.9 from public registry.</span>
+[INFO] Downloading @devilcorp/internal-ui@99.9.9...
+[INFO] Running 'npm install'...
+[INFO] Running post-install scripts for @devilcorp/internal-ui...
+[DEBUG] Initializing telemetry module...
+[DEBUG] Connection established to remote endpoint: 192.168.1.104
+[DEBUG] Exfiltrating environment context...
+<span class="log-flag">[SUCCESS] Environment Leak: FLAG=DEVILCORP{D3p3nd3ncy_C0nfusion_Hacked}</span>
+[INFO] Build successful.
+[INFO] Artifacts generated: auth-service-release.bin
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLogs(project) {
+            document.getElementById('pipeline-list').style.display = 'none';
+            document.getElementById('log-viewer').style.display = 'block';
+            
+            // Auto-scroll logs
+            const logBody = document.getElementById('log-body');
+            logBody.scrollTop = logBody.scrollHeight;
+        }
+
+        function closeLogs() {
+            document.getElementById('pipeline-list').style.display = 'block';
+            document.getElementById('log-viewer').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

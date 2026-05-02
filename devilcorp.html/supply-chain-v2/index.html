@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Crypto Vault Terminal</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --border: #2d333b; }
+        body { font-family: 'JetBrains Mono', monospace; background: #000; color: var(--accent); margin: 0; padding: 20px; overflow: hidden; }
+        .terminal-container { max-width: 800px; margin: 0 auto; }
+        .output { height: 400px; overflow-y: auto; margin-bottom: 20px; line-height: 1.5; font-size: 0.9rem; }
+        .input-line { display: flex; gap: 10px; align-items: center; }
+        input { background: transparent; border: none; color: #fff; outline: none; font-family: inherit; font-size: 0.9rem; flex: 1; }
+        .cursor { width: 10px; height: 1.2rem; background: var(--accent); animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .sys-msg { color: #888; font-size: 0.75rem; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="output" id="log">
+            <div class="sys-msg">[SYSTEM] Booting DevilCorp Crypto-Vault OS...</div>
+            <div class="sys-msg">[SYSTEM] Initializing devil-crypto-module v1.4.2...</div>
+            <div>WELCOME TO CRYPTO_VAULT_PRO. UNAUTHORIZED ACCESS IS PROHIBITED.</div>
+            <br>
+            <div>Available Commands:</div>
+            <div> - <span style="color:#fff">help</span> : Show command list</div>
+            <div> - <span style="color:#fff">source</span> : Download application source bundle</div>
+            <div> - <span style="color:#fff">sync</span> : Synchronize vault with main server</div>
+            <br>
+        </div>
+        <div class="input-line">
+            <span>jam3s@dc-vault:~$</span>
+            <input type="text" id="cmd-input" autofocus autocomplete="off">
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById('cmd-input');
+        const log = document.getElementById('log');
+
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const val = input.value.trim().toLowerCase();
+                log.innerHTML += `<div>jam3s@dc-vault:~$ ${val}</div>`;
+                input.value = '';
+
+                if (val === 'help') {
+                    log.innerHTML += `<div>Available: help, source, sync</div>`;
+                } else if (val === 'source') {
+                    log.innerHTML += `<div>[INFO] Preparing source-bundle.tar.gz for download...</div>`;
+                    setTimeout(() => window.open('source-code.txt', '_blank'), 500);
+                } else if (val === 'sync') {
+                    log.innerHTML += `<div style="color:#fff">Starting vault synchronization...</div>`;
+                    log.innerHTML += `<div>[NETWORK] Outgoing POST -> /api/secure-vault</div>`;
+                    
+                    // Send a REAL request that Burp Suite can catch
+                    fetch('/api/secure-vault', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-Vault-Token': 'REQ_TOKEN_NULL'
+                        },
+                        body: JSON.stringify({ vault_id: "9901", action: "sync" })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === "authenticated") {
+                            log.innerHTML += `<div style="color:var(--accent)">[SUCCESS] MASTER BYPASS ACCEPTED!</div>`;
+                            log.innerHTML += `<div style="color:#fff">FLAG: ${data.data.vault_root_key}</div>`;
+                        } else {
+                            log.innerHTML += `<div style="color:#ff4d4d">[ERROR] 401 Unauthorized: Invalid Header Token.</div>`;
+                        }
+                    })
+                    .catch(error => {
+                        log.innerHTML += `<div style="color:#ff4d4d">[ERROR] Connection failed. Ensure server is active.</div>`;
+                    });
+                } else {
+                    log.innerHTML += `<div style="color:#ff4d4d">Command not found: ${val}</div>`;
+                }
+                log.scrollTop = log.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>

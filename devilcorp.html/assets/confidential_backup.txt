@@ -1,0 +1,11 @@
+DEVILCORP INTERNAL NOTIFICATION
+--------------------------------
+DATE: 2025-05-02
+AUTHOR: DEV-AJ
+
+This backup contains temporary secrets for the cloud infrastructure deployment.
+Ensure this file is deleted after the migration is complete.
+
+ROOT_ACCESS_TOKEN: [REDACTED]
+SYSTEM_LOG_FLAG: DEVILCORP{Dir_Listing_Exposed}
+--------------------------------

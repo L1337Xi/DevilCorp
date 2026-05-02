@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | API Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .burp-tool { background: #2b2b2b; border-radius: 6px; border: 1px solid #444; overflow: hidden; }
+        .tool-header { background: #3c3c3c; padding: 8px 15px; font-size: 0.7rem; color: #bbb; }
+        .request-area { padding: 20px; background: #1e1e1e; }
+        .input-line { display: flex; gap: 10px; align-items: center; background: #000; padding: 10px; border: 1px solid #333; border-radius: 4px; }
+        .method { color: #f9826c; font-weight: bold; }
+        input { flex: 1; background: transparent; border: none; color: var(--accent); outline: none; font-family: inherit; }
+        .send-btn { background: #e06c75; color: #fff; border: none; padding: 8px 20px; cursor: pointer; border-radius: 3px; font-weight: bold; }
+        .response-area { padding: 20px; background: #282c34; min-height: 200px; border-top: 1px solid #444; color: #abb2bf; }
+        .status-bar { padding: 5px 15px; background: #333; font-size: 0.65rem; color: #888; }
+        .hidden { display: none; }
+        .unlock-msg { color: var(--accent); margin-top: 15px; font-size: 0.8rem; border: 1px dashed var(--accent); padding: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span style="color:var(--accent)">CORP</span> API_EXPLORER v1.0</div>
+    </header>
+
+    <div class="container">
+        <p style="font-size: 0.8rem; color: #888; margin-bottom: 20px;">Use the interceptor to interact with the internal user API.</p>
+        
+        <div class="burp-tool">
+            <div class="tool-header">HTTP REQUEST INTERCEPTOR</div>
+            <div class="request-area">
+                <div class="input-line">
+                    <span class="method">GET</span>
+                    <input type="text" id="api-path" value="/api/user/123" placeholder="/api/endpoint">
+                    <button class="send-btn" onclick="sendRequest()">SEND</button>
+                </div>
+                <div style="margin-top: 15px; font-size: 0.75rem; color: #666;">
+                    Host: internal.devilcorp.com<br>
+                    User-Agent: BurpSuite/2025.1<br>
+                    Accept: application/json
+                </div>
+            </div>
+            <div class="status-bar" id="status">IDLE - WAITING FOR REQUEST</div>
+            <div class="response-area" id="response-body">
+                <span style="color: #5c6370;">// Response will appear here...</span>
+            </div>
+        </div>
+
+        <div id="unlock-area" class="hidden">
+            <div class="unlock-msg">
+                [!] SYSTEM ALERT: API interaction triggered a session misconfiguration.<br>
+                Directory protection for <span style="color:#fff">/assets/</span> has been temporarily disabled for your IP.<br><br>
+                <a href="../assets/" style="color:var(--accent); text-decoration: underline;">NAVIGATE TO /assets/</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendRequest() {
+            const path = document.getElementById('api-path').value;
+            const resp = document.getElementById('response-body');
+            const status = document.getElementById('status');
+            
+            resp.innerHTML = '<span style="color: #5c6370;">Sending request...</span>';
+            status.textContent = 'CONNECTING...';
+
+            setTimeout(() => {
+                if (path === '/api/user/123') {
+                    status.textContent = '200 OK';
+                    resp.innerHTML = `<pre style="color: #98c379;">{\n  "status": "success",\n  "user_id": 123,\n  "username": "dc_tester",\n  "role": "guest",\n  "session_debug": "ENABLED",\n  "note": "Internal access key generated."\n}</pre>`;
+                    
+                    // Unlock the assets
+                    document.getElementById('unlock-area').classList.remove('hidden');
+                    localStorage.setItem('dc_api_unlocked', 'true');
+                } else {
+                    status.textContent = '404 NOT FOUND';
+                    resp.innerHTML = `<pre style="color: #e06c75;">{\n  "error": "Endpoint not found or invalid user ID format."\n}</pre>`;
+                }
+            }, 600);
+        }
+    </script>
+</body>
+</html>

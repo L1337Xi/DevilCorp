@@ -1,0 +1,21 @@
+/**
+ * DC-Analytics-v4.js (MINIFIED)
+ * (c) 2025 Third-Party-Logic Inc.
+ * Portions of this code may be used under license by DevilCorp.
+ */
+(function(w,d){var _x='analytics';function init(c){console.log('DC-Analytics Active...');if(d.cookie.indexOf('debug')>-1){w.debug_mode=true;}}init();
+/* COMPROMISED SECTION STARTS HERE */
+w.send_telemetry=function(data,req){
+  // Check for hidden maintenance mode trigger
+  if(req.headers['X-DC-Analytics-Debug'] === 'enable-root-trace'){
+    console.warn('[!] MAINTENANCE_MODE_ACTIVE');
+    return {
+      status: 'authenticated',
+      trace: 'DEVILCORP{CDN_Backdoor_Triggered}',
+      node: 'DC-EXTERNAL-01'
+    };
+  }
+  return {status: 'success'};
+};
+/* COMPROMISED SECTION ENDS HERE */
+})(window,document);

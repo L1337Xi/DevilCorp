@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | API Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --border: #2d333b; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .tool { background: #2b2b2b; border-radius: 6px; border: 1px solid #444; overflow: hidden; }
+        .tool-header { background: #3c3c3c; padding: 8px 15px; font-size: 0.7rem; color: #bbb; }
+        .request-area { padding: 20px; background: #1e1e1e; }
+        .line { margin-bottom: 15px; }
+        .input-box { display: flex; gap: 10px; align-items: center; background: #000; padding: 5px; border: 1px solid #333; border-radius: 4px; margin-bottom: 10px; }
+        select, input, textarea { background: transparent; border: none; color: var(--accent); outline: none; font-family: inherit; }
+        textarea { width: 100%; height: 100px; background: #000; border: 1px solid #333; padding: 10px; color: #fff; box-sizing: border-box; }
+        .send-btn { background: #e06c75; color: #fff; border: none; padding: 10px 25px; cursor: pointer; border-radius: 3px; font-weight: bold; width: 100%; }
+        .response-area { padding: 20px; background: #282c34; min-height: 200px; border-top: 1px solid #444; color: #abb2bf; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span style="color:var(--accent)">CORP</span> API_CONSOLE v2.0</div>
+    </header>
+
+    <div class="container">
+        <div class="tool">
+            <div class="tool-header">HTTP REQUEST CONSOLE</div>
+            <div class="request-area">
+                <div class="input-box">
+                    <span style="color:#f9826c; font-weight:bold; padding-left:10px;">POST</span>
+                    <input type="text" id="api-path" value="/api/process" style="flex:1">
+                </div>
+                <div class="line">
+                    <label style="font-size:0.7rem; color:#555;">HEADER: Content-Type</label>
+                    <input type="text" id="content-type" value="application/json" style="width:100%; border-bottom:1px solid #333;">
+                </div>
+                <div class="line">
+                    <label style="font-size:0.7rem; color:#555;">JSON BODY</label>
+                    <textarea id="json-body">{
+  "data": "user_input_here"
+}</textarea>
+                </div>
+                <button class="send-btn" onclick="sendRequest()">EXECUTE REQUEST</button>
+            </div>
+            <div class="response-area" id="response-body">
+                <span style="color: #5c6370;">// Waiting for API execution...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendRequest() {
+            const path = document.getElementById('api-path').value;
+            const ct = document.getElementById('content-type').value;
+            const bodyStr = document.getElementById('json-body').value;
+            const resp = document.getElementById('response-body');
+            
+            resp.innerHTML = '<span style="color: #5c6370;">Connecting to application...</span>';
+
+            setTimeout(() => {
+                if (ct !== 'application/json') {
+                    resp.innerHTML = `<pre style="color: #e06c75;">HTTP/1.1 415 Unsupported Media Type\n\n{\n  "error": "Content-Type must be application/json"\n}</pre>`;
+                    return;
+                }
+
+                try {
+                    const body = JSON.parse(bodyStr);
+                    if (path === '/api/process') {
+                        if (body.data === 'debug') {
+                            resp.innerHTML = `<pre style="color: #98c379;">HTTP/1.1 200 OK\n\n{\n  "debug_info": {\n    "environment": "DEV-STACK-04",\n    "version": "1.0.0-VULNERABLE",\n    "leak_detected": true,\n    "flag": "DEVILCORP{Supply_Chain_Debug_Leak}"\n  }\n}</pre>`;
+                        } else {
+                            resp.innerHTML = `<pre style="color: #abb2bf;">HTTP/1.1 200 OK\n\n{\n  "status": "success",\n  "result": "Processed: ${body.data}"\n}</pre>`;
+                        }
+                    } else {
+                        resp.innerHTML = `<pre style="color: #e06c75;">HTTP/1.1 404 Not Found\n\n{\n  "error": "Endpoint not found"\n}</pre>`;
+                    }
+                } catch(e) {
+                    resp.innerHTML = `<pre style="color: #e06c75;">HTTP/1.1 400 Bad Request\n\n{\n  "error": "Malformed JSON body"\n}</pre>`;
+                }
+            }, 600);
+        }
+    </script>
+</body>
+</html>

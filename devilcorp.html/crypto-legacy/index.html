@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Legacy Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: #000; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .legacy-card { background: rgba(15, 15, 15, 0.95); border: 1px solid #333; border-radius: 4px; padding: 40px; width: 100%; max-width: 550px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+        h1 { color: #888; font-size: 1.1rem; letter-spacing: 5px; margin-bottom: 25px; border-bottom: 1px solid #222; padding-bottom: 15px; }
+        .terminal-block { font-size: 0.8rem; color: #555; text-align: left; background: #080808; padding: 20px; border-radius: 4px; margin-bottom: 25px; border: 1px solid #111; line-height: 1.6; }
+        .accent { color: var(--accent); }
+        .btn-legacy { background: transparent; border: 1px solid #444; color: #666; padding: 12px 30px; cursor: pointer; font-family: inherit; font-size: 0.8rem; transition: all 0.2s; border-radius: 4px; }
+        .btn-legacy:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 10px var(--accent); }
+        
+        .verify-area { margin-top: 25px; padding-top: 25px; border-top: 1px solid #222; }
+        input { background: #000; border: 1px solid #333; padding: 10px; color: var(--accent); font-family: inherit; width: 80%; text-align: center; outline: none; margin-bottom: 15px; border-radius: 4px; }
+        input:focus { border-color: var(--accent); }
+        .hidden { display: none; }
+        .flag-result { color: var(--accent); font-weight: bold; font-size: 1rem; border: 1px dashed var(--accent); padding: 15px; margin-top: 15px; background: rgba(159, 239, 0, 0.05); }
+        .fail-result { color: var(--error); font-weight: bold; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="legacy-card">
+        <h1>LEGACY_AUTH_NODE_04</h1>
+        <div class="terminal-block" id="term-output">
+            [SYS] STATUS: STANDBY<br>
+            [SYS] PROTOCOL: HTTP/1.1 (UNSECURE)<br>
+            [SYS] WAITING FOR AUTHENTICATION INITIALIZATION...
+        </div>
+        
+        <button id="init-btn" class="btn-legacy" onclick="initiateAuth()">INITIALIZE AUTH</button>
+
+        <div id="verify-area" class="verify-area hidden">
+            <div style="font-size:0.7rem; color:#888; margin-bottom:10px;">ENTER DECRYPTED ACCESS_CODE:</div>
+            <input type="text" id="access-code" placeholder="XXXX-XXXX-XXXX" autocomplete="off">
+            <br>
+            <button class="btn-legacy" onclick="verifyCode()">VERIFY KEY</button>
+            <div id="result-display"></div>
+        </div>
+    </div>
+
+    <script>
+        function initiateAuth() {
+            // Secret code: DEVIL-CORP-ACCESS-2025
+            const secretCode = "DEVIL-CORP-ACCESS-2025";
+            const encoded = btoa(secretCode);
+
+            fetch('/api/legacy-auth-trigger', {
+                method: 'GET',
+                headers: { 'X-Access-Token': encoded }
+            }).then(() => {
+                document.getElementById('term-output').innerHTML += `<br><span class="accent">[OK]</span> AUTH_PACKET SENT TO PROXY.<br>[SYS] INTERCEPT DETECTED. WAITING FOR MASTER KEY...`;
+                document.getElementById('verify-area').classList.remove('hidden');
+                document.getElementById('init-btn').classList.add('hidden');
+            });
+        }
+
+        function verifyCode() {
+            const input = document.getElementById('access-code').value.trim();
+            const result = document.getElementById('result-display');
+
+            if (input === "DEVIL-CORP-ACCESS-2025") {
+                result.innerHTML = `
+                    <div class="flag-result">
+                        [SUCCESS] MASTER KEY VERIFIED.<br>
+                        FLAG: DEVILCORP{Weak_Encod1ng_Is_Not_Encrypt1on}
+                    </div>
+                `;
+                document.getElementById('term-output').innerHTML = `[SYS] STATUS: AUTHENTICATED<br>[SYS] ACCESS LEVEL: ROOT<br>[SYS] SESSION OPENED.`;
+            } else {
+                result.innerHTML = `<div class="fail-result">LEGACY_AUTH_NODE_04 failed: INVALID ACCESS CODE</div>`;
+                document.getElementById('access-code').style.borderColor = "var(--error)";
+                setTimeout(() => {
+                    document.getElementById('access-code').style.borderColor = "#333";
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Cloud Monitor</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #9fef00;
+            --bg-overlay: rgba(13, 17, 23, 0.9);
+            --border: #2d333b;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .monitor-card {
+            background-color: var(--bg-overlay);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h2 { border-bottom: 1px solid var(--border); padding-bottom: 15px; font-size: 1.2rem; }
+        .accent { color: var(--accent); }
+        .form-group { margin-top: 25px; }
+        .input-group { display: flex; gap: 10px; margin-top: 10px; }
+        input {
+            flex: 1;
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 12px;
+            color: var(--accent);
+            font-family: inherit;
+            border-radius: 4px;
+            outline: none;
+        }
+        .fetch-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .fetch-btn:hover { background-color: var(--accent); color: #000; }
+        .terminal-output {
+            margin-top: 30px;
+            background-color: #000;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            min-height: 150px;
+            white-space: pre-wrap;
+            color: #ccc;
+        }
+        .output-header { color: #555; margin-bottom: 10px; font-size: 0.7rem; border-bottom: 1px solid #111; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 1.2rem; font-weight: bold; letter-spacing: 2px;">
+            DEVIL<span class="accent">CORP</span>
+        </div>
+        <div style="font-size: 0.8rem; color: #9ea4b0;">
+            INTERNAL CLOUD MONITOR v2.0
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="monitor-card">
+            <h2>Remote Server Health Check</h2>
+            <p style="font-size: 0.8rem; color: #9ea4b0;">Enter an external URL to fetch its current status and connectivity metrics.</p>
+            
+            <div class="form-group">
+                <label style="font-size: 0.7rem; color: var(--accent);">TARGET_URL</label>
+                <div class="input-group">
+                    <input type="text" id="target-url" placeholder="http://server-01.external-dc.com/status">
+                    <button class="fetch-btn" onclick="fetchStatus()">CHECK HEALTH</button>
+                </div>
+            </div>
+
+            <div class="terminal-output" id="output">
+                <div class="output-header">TERMINAL_OUTPUT_LOG</div>
+                <span style="color: #555;">Waiting for user input...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function fetchStatus() {
+            const url = document.getElementById('target-url').value;
+            const output = document.getElementById('output');
+            
+            output.innerHTML = '<div class="output-header">TERMINAL_OUTPUT_LOG</div>Fetching resource: ' + url + '...\nConnecting to backend proxy...\n';
+
+            setTimeout(() => {
+                if (url.includes('169.254.169.254/latest/meta-data/iam/security-credentials/admin-role')) {
+                    output.innerHTML += `<span style="color: var(--accent);">[SUCCESS] 200 OK - RESOURCE RETRIEVED:</span>\n\n` + 
+                    JSON.stringify({
+                        "Code": "Success",
+                        "LastUpdated": "2025-05-01T12:00:00Z",
+                        "Type": "AWS-HMAC",
+                        "AccessKeyId": "ASIAV4S-DEVILCORP-7734",
+                        "SecretAccessKey": "fJ3kL9mN2pQ-ROOT-SECRET-KEY",
+                        "Token": "IQoJb3JpZ2luX2VjE...",
+                        "Flag": "DEVILCORP{SSRF_AWS_M3tadata_Exfiltrat1on}"
+                    }, null, 2);
+                } else if (url.includes('169.254.169.254')) {
+                    output.innerHTML += `<span style="color: var(--accent);">[SUCCESS] 200 OK - DIRECTORY LISTING:</span>\n\nlatest/`;
+                } else {
+                    output.innerHTML += `<span style="color: #ff4d4d;">[ERROR] 503 Service Unavailable:</span>\nConnection timeout to external host. Firewall policies may be blocking outbound traffic to this destination.`;
+                }
+            }, 800);
+        }
+    </script>
+</body>
+</html>

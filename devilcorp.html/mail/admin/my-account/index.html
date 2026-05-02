@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp Mail | Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #ff4d4d; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --success: #9fef00; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--bg); color: #fff; margin: 0; padding: 0; }
+        header { background: #000; padding: 15px 40px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        .mail-card { background: rgba(30, 0, 0, 0.4); border: 1px solid var(--border); border-radius: 8px; padding: 30px; box-shadow: 0 0 20px rgba(255,0,0,0.1); }
+        .email-meta { font-size: 0.8rem; color: #888; border-bottom: 1px solid #222; padding-bottom: 15px; margin-bottom: 20px; }
+        .email-body { line-height: 1.6; font-size: 0.9rem; }
+        .otp-code { font-size: 1.5rem; color: var(--success); font-weight: bold; letter-spacing: 5px; margin: 20px 0; border: 1px dashed var(--success); padding: 10px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight: bold; letter-spacing: 2px;">DEVIL<span style="color:var(--accent)">CORP</span> MAIL_SERVICE</div>
+        <div style="font-size: 0.8rem; color: #9ea4b0;">User: <span style="color:var(--accent)">admin</span></div>
+    </header>
+
+    <div class="container">
+        <div class="mail-card">
+            <div class="email-meta">
+                FROM: security-no-reply@devilcorp.com<br>
+                SUBJECT: [CRITICAL] Admin 2FA Override Code
+            </div>
+            <div class="email-body">
+                Hello <strong>Administrator</strong>,<br><br>
+                A high-privilege login attempt has been detected for the IT-Infrastructure node. Use the following bypass token to authorize the session:<br><br>
+                <div class="otp-code">ROOT-9981</div><br>
+                Security Alert: This code is only valid for 120 seconds.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

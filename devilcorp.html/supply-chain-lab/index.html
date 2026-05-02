@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Internal Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; }
+        body { font-family: 'JetBrains Mono', monospace; background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed; background-size: cover; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .app-card { background: rgba(13, 17, 23, 0.9); border: 1px solid var(--border); border-radius: 8px; padding: 40px; max-width: 600px; text-align: center; backdrop-filter: blur(10px); }
+        h1 { color: var(--accent); letter-spacing: 2px; }
+        .action-group { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+        .btn { text-decoration: none; padding: 12px; border-radius: 4px; font-weight: bold; transition: all 0.2s; font-size: 0.9rem; border: 1px solid var(--accent); display: block; }
+        .btn-primary { background: var(--accent); color: #000; }
+        .btn-outline { color: var(--accent); background: transparent; }
+        .btn:hover { box-shadow: 0 0 15px var(--accent); transform: scale(1.02); }
+    </style>
+</head>
+<body>
+    <div class="app-card">
+        <h1>DC_ANALYTICS_PLATFORM</h1>
+        <p style="color:#9ea4b0; font-size: 0.8rem;">Analyzing corporate traffic with third-party intelligence.</p>
+        
+        <div style="margin-top:20px; font-size: 0.75rem; color: #555; text-align: left; background: #000; padding: 10px; border-radius: 4px;">
+            [CORE] dc-analytics-v4.js<br>
+            [CDN] cloud-delivery.devilcorp-external.net<br>
+            [INTEGRITY] Verification Skipped (Bypassed by AJ)
+        </div>
+
+        <div class="action-group">
+            <a href="lib-source.txt" target="_blank" class="btn btn-outline">[ INSPECT LIBRARY SOURCE ]</a>
+            <a href="interceptor.html" class="btn btn-primary">[ OPEN API INTERCEPTOR ]</a>
+        </div>
+    </div>
+</body>
+</html>

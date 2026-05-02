@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Password Recovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 
+      DEVELOPER NOTE:
+      Temporary workaround for offline authentication.
+      The secret_question_answer is cached here for the validator.
+      Answer: Lucif3r
+    -->
+    <meta name="offline-validator-key" content="Lucif3r">
+    
+    <style>
+        :root { --accent: #9fef00; --bg: #0d1117; --card: #1c2333; --border: #2d333b; --error: #ff4d4d; }
+        body { font-family: 'JetBrains Mono', monospace; background: url('../../DEVILCROPBG.jpeg') no-repeat center center fixed; background-size: cover; color: #fff; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .recovery-card { background: rgba(13, 17, 23, 0.95); border: 1px solid var(--border); border-radius: 8px; padding: 40px; width: 100%; max-width: 500px; backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+        h1 { color: var(--accent); font-size: 1.1rem; letter-spacing: 2px; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-bottom: 25px; }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        label { display: block; font-size: 0.75rem; color: #888; margin-bottom: 8px; text-transform: uppercase; }
+        input { width: 100%; background: #000; border: 1px solid var(--border); padding: 12px; color: var(--accent); border-radius: 4px; outline: none; font-family: inherit; box-sizing: border-box; }
+        input:focus { border-color: var(--accent); }
+        .btn-recover { width: 100%; background: var(--accent); color: #000; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-top: 10px; }
+        .btn-recover:hover { box-shadow: 0 0 15px var(--accent); }
+        .status-msg { margin-top: 20px; padding: 15px; border-radius: 4px; font-size: 0.85rem; text-align: center; display: none; }
+        .status-success { background: rgba(159, 239, 0, 0.1); border: 1px solid var(--accent); color: var(--accent); }
+        .status-error { background: rgba(255, 77, 77, 0.1); border: 1px solid var(--error); color: var(--error); }
+    </style>
+</head>
+<body>
+    <div class="recovery-card">
+        <h1>ACCOUNT_RECOVERY_TERMINAL</h1>
+        <p style="font-size: 0.8rem; color: #9ea4b0; margin-bottom: 25px;">Identification verified for user: <span style="color:#fff">AJ (CEO)</span></p>
+        
+        <div class="form-group">
+            <label>Security Question</label>
+            <div style="background:#080808; padding:12px; border:1px solid #111; color:#fff; font-size:0.85rem; border-radius:4px;">
+                What name do people usually call you?
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Your Answer</label>
+            <input type="text" id="answer-input" placeholder="Enter answer...">
+        </div>
+
+        <button class="btn-recover" onclick="verifyAnswer()">RESET PASSWORD</button>
+
+        <div id="status" class="status-msg"></div>
+    </div>
+
+    <script>
+        function verifyAnswer() {
+            const input = document.getElementById('answer-input').value.trim();
+            const status = document.getElementById('status');
+            
+            status.style.display = 'block';
+            status.className = 'status-msg';
+            status.textContent = '[INFO] Verifying with central mainframe...';
+
+            fetch('/api/secure-reset', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ answer: input })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    status.className = 'status-msg status-success';
+                    status.innerHTML = `
+                        [SUCCESS] AUTHENTICATION BYPASS DETECTED.<br>
+                        NEW PASSWORD: ${data.new_password}<br>
+                        FLAG: ${data.flag}
+                    `;
+                } else {
+                    status.className = 'status-msg status-error';
+                    status.textContent = '[ERROR] Invalid answer. Verification failed.';
+                }
+            })
+            .catch(error => {
+                status.className = 'status-msg status-error';
+                status.textContent = '[ERROR] System connection failed.';
+            });
+        }
+    </script>
+</body>
+</html>

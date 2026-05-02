@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevilCorp | Internal Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #9fef00;
+            --bg-overlay: rgba(13, 17, 23, 0.85);
+            --border: #2d333b;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background: url('../DEVILCROPBG.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .login-card {
+            background-color: var(--bg-overlay);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+        .logo-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo-area h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            margin: 0;
+        }
+        .accent { color: var(--accent); }
+        .form-group { margin-bottom: 20px; }
+        label {
+            display: block;
+            font-size: 0.8rem;
+            color: #9ea4b0;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        input {
+            width: 100%;
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 12px;
+            color: var(--accent);
+            font-family: inherit;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input:focus { border-color: var(--accent); }
+        button {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: var(--accent);
+            color: #000;
+            box-shadow: 0 0 15px var(--accent);
+        }
+        .footer-hint {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.7rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="logo-area">
+            <h1>DEVIL<span class="accent">CORP</span></h1>
+            <p style="font-size: 0.6rem; color: #9ea4b0;">SECURE INTERNAL TERMINAL</p>
+        </div>
+        <div class="form-group">
+            <label>Employee ID</label>
+            <input type="text" placeholder="e.g. DC-7734">
+        </div>
+        <div class="form-group">
+            <label>Security Key</label>
+            <input type="password" placeholder="••••••••">
+        </div>
+        <button onclick="alert('ACCESS DENIED: Credentials mismatch. Local logs updated.')">Authenticate</button>
+        <div class="footer-hint">System Build: 2025.11.04-RELEASE</div>
+    </div>
+</body>
+</html>
