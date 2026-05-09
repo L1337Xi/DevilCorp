@@ -59,5 +59,6 @@ This project is for **authorized educational purposes only**. The techniques dem
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-lightgrey?style=flat&logo=github)](https://github.com/L1337Xi)
 
 
-credentials: devilcorp | password123
+
 ------------------------------------------------------------------------------------------------------------
+credentials: devilcorp | password123
