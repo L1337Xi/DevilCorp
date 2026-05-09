@@ -61,4 +61,4 @@ This project is for **authorized educational purposes only**. The techniques dem
 
 
 ------------------------------------------------------------------------------------------------------------
-credentials: devilcorp | password123
+{ credentials: devilcorp | password123 }
