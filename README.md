@@ -26,7 +26,7 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/L1337Xi/DevilCorp/m
      vulnerabilities, and 2FA Implementation Failures.
 *   **Dynamic Backend:** A custom Python-based API server that interacts with industry-standard tools
      like **Burp Suite Professional**.
-    *   **Comprehensive Theory:** Deep technical breakdowns and mitigation strategies for each
+*   **Comprehensive Theory:** Deep technical breakdowns and mitigation strategies for each
      vulnerability category.
 
 ---
